@@ -39,6 +39,28 @@
 
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;500;700;900&display=swap");
 
+:root {
+  --primaryColor: hsl(14, 90%, 53%);
+  --primaryColorLight: hsl(14, 95%, 91%);
+  --bgColor: hsl(0, 0%, 100%);
+  --formColor: hsl(20, 43, 87%);
+  --whiteColor: hsl(0, 0%, 100%);
+  --blackColor: hsl(0, 0%, 18%);
+  --greyText: hsl(0, 0%, 51%);
+  --inputColor: hsl(330, 12%, 97%);
+  --cardColor: hsl(300, 3%, 94%);
+
+  /* Font */
+  --biggestFontSize: 2.5rem;
+  --h1FontSize: 2rem;
+  --h2FontSize: 1.25rem;
+  --h3FontSize: 1rem;
+  --normalFontSize: 0.938rem;
+  --smallFontSize: 0.813rem;
+  --smallestFontSize: 0.75rem;
+  --borderRadius: 3rem;
+}
+
 * {
   padding: 0;
   margin: 0;
@@ -47,7 +69,7 @@
 }
 
 body {
-  background: hsl(0, 0%, 51%);
+  background: var(--bgColor);
 }
 
 /* Default Styling */
@@ -63,7 +85,7 @@ body {
 }
 
 p {
-  font-size: 0.813rem;
+  font-size: var(--smallFontSize);
 }
 
 html {
@@ -79,7 +101,7 @@ li {
 }
 
 .icon {
-  font-size: 1.25rem;
+  font-size: var(--h2FontSize);
   cursor: pointer;
 }
 
@@ -93,10 +115,10 @@ video {
   border: none;
   outline: none;
   cursor: pointer;
-  border-radius: 3rem;
+  border-radius: var(--borderRadius);
   padding: 0.8rem 1rem;
-  color: hsl(0, 0%, 100%);
-  background: hsl(14%, 90%, 53%);
+  color: var(--whiteColor);
+  background: var(--primaryColor);
 
   &:hover {
     transition: 0.3s ease;
@@ -108,13 +130,13 @@ video {
   text-align: center;
   padding: 1rem 0;
   font-size: 25px;
-  color: hsl(0, 0%, 18%);
+  color: var(--blackColor);
   flex-direction: column;
   gap: 1rem;
 
   p {
-    color: hsl(0, 0%, 18%);
-    font-size: 0.938rem;
+    color: var(--blackColor);
+    font-size: var(--normalFontSize);
     font-weight: 400;
   }
 }
@@ -128,8 +150,8 @@ video {
 }
 
 .btn:hover {
-  color: hsl(14, 90%, 53%);
-  background: hsl(14, 96%, 91%);
+  color: var(--primaryColor);
+  background: var(--primaryColorLight);
 }
 
 .section {
@@ -142,20 +164,18 @@ video {
 }
 
 ::selection {
-  background: hsl(14, 96%, 91%);
-  color: hsl(14, 90%, 53%);
+  background: var(--primaryColorLight);
+  color: var(--primaryColor);
 }
 
 ::-webkit-scrollbar {
   width: 10px;
-  background: hsl(14, 96%, 91%);
+  background: var(--primaryColorLight);
 }
 
 ::-webkit-scrollbar-thumb {
   width: 10px;
-  background: hsl(14, 90%, 53%);
-  border-radius: 3rem;
+  background: var(--primaryColor);
+  border-radius: var(--borderRadius);
 }
 /* Above Styling will take effect in future DO NOT REMOVE */
-
-

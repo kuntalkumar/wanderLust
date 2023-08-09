@@ -2,18 +2,14 @@ import React from "react";
 import { Route, Routes } from "react-router-dom";
 import PlaceCard from "../Component/PlaceCard";
 import Hotel from "../Component/Hotels";
+import Home from "../Component/Home/Home";
 
 const AllRoutes = () => {
-    return (
+  return (
+    <Routes>
+      <Route exact path="/" element={<Home />} />
+    </Routes>
+  );
+};
 
-        <Routes>
-        <Route exact path='/holidays' element={<PlaceCard/>} />
-        <Route exact path='/hotels' element={<Hotel/>} />
-        
-
-        
-      </Routes>
-        );
-    };
-
-    export default AllRoutes    
+export default AllRoutes;
