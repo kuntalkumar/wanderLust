@@ -1,0 +1,54 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;500;700;900&display=swap");
+
+:root {
+  --primaryColor: hsl(14, 90%, 53%);
+  --primaryColorLight: hsl(14, 95%, 91%);
+  --bgColor: hsl(0, 0%, 100%);
+  --formColor: hsl(20, 43, 87%);
+  --whiteColor: hsl(0, 0%, 100%);
+  --blackColor: hsl(0, 0%, 18%);
+  --greyText: hsl(0, 0%, 51%);
+  --inputColor: hsl(330, 12%, 97%);
+  --cardColor: hsl(300, 3%, 94%);
+
+  /* Font */
+  --biggestFontSize: 2.5rem;
+  --h1FontSize: 2rem;
+  --h2FontSize: 1.25rem;
+  --h3FontSize: 1rem;
+  --normalFontSize: 0.938rem;
+  --smallFontSize: 0.813rem;
+  --smallestFontSize: 0.75rem;
+  --borderRadius: 3rem;
+}
+
+.middle {
+  width: 100%;
+
+  .secContainer {
+    .grid {
+      padding: 3rem;
+      border-radius: var(--borderRadius);
+      background: var(--primaryColor);
+      justify-content: center;
+      margin: auto;
+      gap: 2rem;
+
+      .flex {
+        justify-content: center;
+        gap: 0.5rem;
+
+        .h1Font {
+          font-size: var(--h1FontSize);
+          font-weight: 700;
+          color: var(--blackColor);
+        }
+
+        .pFont {
+          opacity: 0.8;
+          max-width: 80px;
+        }
+      }
+    }
+  }
+}

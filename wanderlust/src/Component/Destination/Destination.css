@@ -1,0 +1,68 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;500;700;900&display=swap");
+
+:root {
+  --primaryColor: hsl(14, 90%, 53%);
+  --primaryColorLight: hsl(14, 95%, 91%);
+  --bgColor: hsl(0, 0%, 100%);
+  --formColor: hsl(20, 43, 87%);
+  --whiteColor: hsl(0, 0%, 100%);
+  --blackColor: hsl(0, 0%, 18%);
+  --greyText: hsl(0, 0%, 51%);
+  --inputColor: hsl(330, 12%, 97%);
+  --cardColor: hsl(300, 3%, 94%);
+
+  /* Font */
+  --biggestFontSize: 2.5rem;
+  --h1FontSize: 1.6rem;
+  --h2FontSize: 1.25rem;
+  --h3FontSize: 1rem;
+  --normalFontSize: 0.938rem;
+  --smallFontSize: 0.813rem;
+  --smallestFontSize: 0.75rem;
+  --borderRadius: 3rem;
+}
+
+.destination {
+  .secContainer {
+    .redText {
+      color: var(--primaryColor);
+      font-size: var(--smallFontSize);
+      font-weight: 500;
+    }
+
+    .h3Heading {
+      font-size: var(--h1FontSize);
+    }
+
+    .searchField {
+      margin-top: 2rem;
+      gap: 1rem;
+
+      .inputField {
+        background: var(--primaryColorLight);
+        padding: 1rem;
+        border-radius: var(--borderRadius);
+        gap: 0.5rem;
+
+        .input {
+          background: transparent;
+          border: none;
+          outline: none;
+          width: 100%;
+        }
+
+        .icon {
+          color: var(--blackColor);
+        }
+      }
+
+      .btn {
+        gap: 0.5rem;
+        margin: auto;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+      }
+    }
+  }
+}
