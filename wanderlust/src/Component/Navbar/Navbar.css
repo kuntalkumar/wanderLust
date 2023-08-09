@@ -1,0 +1,56 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;500;700;900&display=swap");
+
+:root {
+  --primaryColor: hsl(14, 90%, 53%);
+}
+.navBar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 1.5rem 2rem;
+  position: fixed;
+  border-bottom: 1.5px solid hsl(14, 90, 53%);
+  /* background: #000; */
+  background: #daa3a3;
+  backdrop-filter: blur(5px);
+  .logoDiv {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    span {
+      color: hsl(0, 0%, 18%);
+      font-size: 1rem;
+      justify-content: center;
+    }
+  }
+  @media screen and (max-width: 767px) {
+    .menu {
+      position: absolute;
+      width: 70%;
+      top: 8rem;
+      right: 50%;
+      left: 50%;
+      transform: translate(-50%);
+      background: rgba(255, 255, 255, 0.94);
+      padding: 2rem;
+      border-radius: 10px;
+      transition: 0.8s ease-in-out;
+      backdrop-filter: blur(5px);
+      box-shadow: 0 2px 3px 4px rgba(236, 213, 213, 0.526);
+
+      .navList {
+        font-size: 1rem;
+        font-weight: 500;
+        padding: 1rem 0;
+        text-align: center;
+        cursor: pointer;
+        &:hover {
+          color: var(--primaryColor);
+          border-bottom: 1.5px solid var(--primaryColor);
+        }
+      }
+    }
+  }
+}
