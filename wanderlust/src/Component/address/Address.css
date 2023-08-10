@@ -1,0 +1,79 @@
+/* Address.css */
+
+/* Adjust the margins and paddings as needed */
+
+.form-container {
+    margin-left: 100px;
+    padding: 16px;
+    width: 600px;
+  }
+  
+  .form-container form {
+    /* Add any specific form styling here */
+  }
+  
+  .form-container .chakra-form-control {
+    margin-bottom: 16px;
+  }
+  
+  .form-container .chakra-form-label {
+    /* Label styling */
+  }
+  
+  .form-container .chakra-input {
+    /* Input field styling */
+    
+  }
+  
+  .form-container .chakra-select {
+    /* Select field styling */
+  }
+  
+  .form-container .chakra-button {
+    margin-top: 16px;
+    background-color: #0d7fb0;
+    color: white;
+    
+  }
+  .form-container .chakra-button:hover{
+    background-color: #20a397;
+  }
+
+  
+  .payment-container {
+    max-width: 400px;
+    margin: auto;
+  }
+  
+  .payment-container .chakra-form-control {
+    margin-bottom: 16px;
+  }
+  
+  .payment-container .chakra-button {
+    background-color: #0d7fb0;
+    color: white;
+    width: 100%;
+  }
+  .payment-container .chakra-button:hover{
+    background-color: #20a397;
+  }
+  
+  /* Modal styles */
+  .modal-content {
+    /* Customize modal styles */
+  }
+  
+  .modal-header {
+    /* Customize modal header styles */
+  }
+  
+  .modal-body {
+    /* Customize modal body styles */
+  }
+  
+  .modal-footer .chakra-button {
+    background-color: #e4640d;
+    color: white;
+    margin-right: 8px;
+  }
+  
