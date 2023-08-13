@@ -15,7 +15,7 @@ const Middle = () => {
 
             <span className="flex">
               <h1 className="h1Font">2k+</h1>
-              <p className="pFont">Fine Destinations</p>
+              <p className="pFont">Fine Destination</p>
             </span>
 
             <span className="flex">
