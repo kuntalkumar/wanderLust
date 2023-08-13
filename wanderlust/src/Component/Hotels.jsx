@@ -16,6 +16,7 @@ import {
   Text,
 } from "@chakra-ui/react";
 import { StarIcon } from "@chakra-ui/icons";
+import { Link as Rlink } from "react-router-dom";
 // import useNavigate from 'react-router-dom'
 
 
@@ -38,7 +39,7 @@ const Hotel = () => {
     };
     axios
       .patch(
-        "http://localhost:8080/data/" + lastDataObject.id,
+        "https://webdata.onrender.com/data/" + lastDataObject.id,
         updatedData
       )
       .then((response) => {
@@ -49,13 +50,13 @@ const Hotel = () => {
       });
 
     setTimeout(() => {
-      window.location.href = "/flight";
+      window.location.href = "/hotels/${e.id}";
     }, 3000);
   };
 
   useEffect(() => {
     axios
-      .get("http://localhost:8080/hotels")
+      .get("https://webdata.onrender.com/hotels")
       .then((response) => {
         setHotels(response.data);
       })
@@ -63,7 +64,7 @@ const Hotel = () => {
         console.log(error);
       });
     axios
-      .get("http://localhost:8080/data")
+      .get("https://webdata.onrender.com/data")
       .then((booking) => {
         setLastBookedHotel(booking.data[booking.data.length - 1]);
       })
@@ -104,21 +105,21 @@ const Hotel = () => {
 
   return (
     <>
-      <Box mt={-40}>
-        <Box bgColor={"#29335c"} h={160}></Box>
-        <Grid templateColumns='repeat(4, 1fr)' gap={10} p={5} bg={"#cceaf7"}>
+      <Box mt={[-20, -20, -40]}>
+        <Box bgColor={"#29335c"} h={[120, 120, 160]}></Box>
+        <Grid templateColumns={['repeat(1, 1fr)', 'repeat(2, 1fr)', 'repeat(4, 1fr)']} gap={10} p={[3, 5]} bg={"#cceaf7"}>
           {hotels.map((hotel) => (
             <Card maxW='md' key={hotel.id} p={2} bg={"white"}>
               <Image
                 src={hotel.image}
                 alt={hotel.name}
                 borderRadius='lg'
-                height='200px'
+                height={['150px', '150px', '200px']}
               />{" "}
               <CardBody>
                 <Stack mt='6' spacing='3'>
-                  <Heading size='lg'>{hotel.name}</Heading>
-                  <Text size='md'>
+                  <Heading size={['md', 'lg']}>{hotel.name}</Heading>
+                  <Text size={['sm', 'md']}>
                     {hotel.address}{" "}
                     {lastBookedHotel && lastBookedHotel.placeName}
                     {", "}
@@ -128,7 +129,7 @@ const Hotel = () => {
                     {hotel.facilities.map((facility, index) => (
                       <Button
                         key={index}
-                        size='sm'
+                        size={['xs', 'sm']}
                         colorScheme='blue'
                         variant='outline'
                       >
@@ -140,7 +141,7 @@ const Hotel = () => {
                     ₹ {hotel.room_price}
                   </Text> */}
                   {renderStarRating(hotel.rating)}
-                  <Text fontSize='2xl' color='blue.600' fontWeight='bold'>
+                  <Text fontSize={['md', '2xl']} color='blue.600' fontWeight='bold'>
                     ₹ {calculateDiscount(hotel.room_price, getRandomDiscount())}{" "}
                     /- per room
                   </Text>
@@ -148,10 +149,15 @@ const Hotel = () => {
               </CardBody>
               <Divider />
               <CardFooter>
-                <ButtonGroup spacing='2'>
-                  <Button
+              <Rlink to={`/hotels/${hotel.id}`} >
+              <ButtonGroup spacing='2'>
+                  <Button 
+                    size={['xs', 'md']}
                     variant='solid'
                     colorScheme='orange'
+                    _hover={{
+                      backgroundColor: "orange.600",
+                    }}
                     // onClick={() => {
                     //   navigate(`/hotels/${e.id}`)
                     // }}
@@ -159,6 +165,10 @@ const Hotel = () => {
                     View Details
                   </Button>
                 </ButtonGroup>
+                 </Rlink>
+
+
+               
                 <Box ml='auto'>
                   <Tag size='md' colorScheme='green'>
                     {getRandomDiscount()}% Off

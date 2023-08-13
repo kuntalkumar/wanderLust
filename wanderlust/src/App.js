@@ -3,7 +3,7 @@ import './App.css';
 import Payment from './Component/Payment';
 import PlaceCard from './Component/PlaceCard';
 import Hotel from './Component/Hotels';
-import Details from './Component/Details';
+
 // import Payment from './Component/Payment';
 import AllRoutes from './Routes/AllRoutes'
 
@@ -11,7 +11,7 @@ function App() {
   return (
     <div className="App">
       <AllRoutes/>
-   
+    
       {/* <Payment/>
       <PlaceCard/> */}
       {/* <Hotel/> */}
