@@ -7,6 +7,73 @@ import { TiLocation } from "react-icons/ti";
 
 // Images imported
 import Destination1 from "../../Assets/Destination1.jpg";
+import TajMahal from "../../Assets/Taj Mahal.jpg";
+import GNP from "../../Assets/Glacier National Park.jpg";
+import Bali from "../../Assets/Bali.jpg";
+import Kerry from "../../Assets/Kerry.jpg";
+import Dubrovnik from "../../Assets/Dubrovnik.jpg";
+import ParoValley from "../../Assets/Paro Valley.jpg";
+import Havana from "../../Assets/havana.png";
+
+// destination Array
+const destinations = [
+  {
+    id: 1,
+    img: Destination1,
+    name: "Maldives Island",
+    location: "Maldives",
+    rating: 4.7,
+  },
+  {
+    id: 2,
+    img: TajMahal,
+    name: "Taj Mahal",
+    location: "Agra, India",
+    rating: 4.9,
+  },
+  {
+    id: 3,
+    img: GNP,
+    name: "Glacier National Park",
+    location: "Montana, USA",
+    rating: 4.8,
+  },
+  {
+    id: 4,
+    img: Bali,
+    name: "Bali",
+    location: "Bali, Indonasia",
+    rating: 4.8,
+  },
+  {
+    id: 5,
+    img: Kerry,
+    name: "Kerry",
+    location: "Kerry, Ireland",
+    rating: 4.4,
+  },
+  {
+    id: 6,
+    img: Dubrovnik,
+    name: "Dubrovnik",
+    location: "Dubrovnik, Croatia",
+    rating: 4.7,
+  },
+  {
+    id: 7,
+    img: ParoValley,
+    name: "Paro Valley",
+    location: "Bhutan",
+    rating: 4.6,
+  },
+  {
+    id: 8,
+    img: Havana,
+    name: "Havana",
+    location: "Havana, Cuba",
+    rating: 4.9,
+  },
+];
 
 const Destination = () => {
   return (
@@ -52,20 +119,29 @@ const Destination = () => {
           </ul>
         </div>
         <div className="destinationContainer grid">
-          <div className="singleDestination">
-            <div className="imgDiv">
-              <img src={Destination1} alt="Destination" />
-              <div className="descInfo flex">
-                <div className="text">
-                  <span className="name">Maldives Island</span>
-                  <p className="flex">
-                    <TiLocation className="icon" />
-                    Maldives
-                  </p>
+          {destinations?.map((destination) => {
+            return (
+              <div className="singleDestination" id={destination.id}>
+                <div className="imgDiv">
+                  <img
+                    src={destination.img}
+                    alt="Destination"
+                    className="img"
+                  />
+                  <div className="descInfo flex">
+                    <div className="text">
+                      <span className="name">{destination.name}</span>
+                      <p className="flex">
+                        <TiLocation className="icon" />
+                        {destination.location}
+                      </p>
+                    </div>
+                    <span className="rating">{destination.rating}</span>
+                  </div>
                 </div>
               </div>
-            </div>
-          </div>
+            );
+          })}
         </div>
       </div>
     </div>

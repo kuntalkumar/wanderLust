@@ -13,7 +13,7 @@ const Home = () => {
         </div>
 
         <div className="sectionText">
-          <h1 className="h1Heading">Explore the beaury of Journey</h1>
+          <h1 className="h1Heading">Explore the beauty of Journey</h1>
           <p className="pHeading">
             Join our community of travel enthusiasts ans discover new places,
             meet new people, and make lasting memories. Book with us and
