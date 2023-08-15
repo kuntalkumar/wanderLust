@@ -1,11 +1,13 @@
-import Address from "./Component/address/Address";
+import Flight from "./Component/address/Flight";
 import AllRoutes from './Routes/AllRoutes'
+import AddressForm from "./Component/payment/Payment"
 
 function App() {
   return (
     <div className="App">
       <AllRoutes/>
-      <Address/>
+      <Flight/>
+      {/* <AddressForm/> */}
       {/* <Payment/>
       <PlaceCard/> */}
       {/* <Hotel/> */}

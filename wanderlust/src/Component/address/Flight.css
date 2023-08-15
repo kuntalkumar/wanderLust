@@ -1,0 +1,177 @@
+
+  /* App.css */
+
+/* Reset some default styles */
+
+
+/* App layout */
+.App {
+  text-align: center;
+  font-family: Arial, sans-serif;
+}
+
+.App-header {
+  background-color: #0d7fb0;
+  padding: 20px;
+  color: white;
+}
+
+main {
+  padding: 20px;
+}
+
+
+.sort_btn{
+  width: 25%;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  align-items: center;
+  border: 1px solid;
+  margin-left: 68%;
+  border-radius: 5px;
+  
+}
+.sort_btn button{
+  background-color: transparent;
+  border-radius: 5px;
+}
+
+.sort_btn button.selected {
+  background-color: transparent;
+  color: #3498db;
+}
+
+.search form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+}
+
+.input-group {
+  display: flex;
+  align-items: center;
+  margin: 10px 0;
+}
+
+.input-group label {
+  margin-right: 10px;
+}
+/* double arrow btn */
+.exchange-icon{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+ 
+}
+.exchange-icon button{
+  
+  border: none;
+  color: green;
+  border-radius: 20px;
+  background-color: transparent;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  cursor: pointer;
+  font-size: 18px;
+  padding: 10px 10px;
+  
+}
+.rotated{
+  transform: rotate(180deg);
+  transition: transform 0.3s ease;
+}
+/* Form and search results */
+.search {
+  margin-bottom: 50px;
+  width: 80%;
+  margin: 0px 100px 0px 150px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+label {
+  font-weight: bold;
+}
+
+input[type="text"],
+input[type="date"] {
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 100%;
+}
+
+.btn {
+  background-color: #0d7fb0;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  align-self: center;
+  margin-bottom: 20px;
+}
+.btn:hover{
+  background-color: #ff6600;
+}
+/* Flight results */
+.flight_btn{
+  background-color: #0d7fb0;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  
+}
+.flight_btn:hover{
+  background-color: #ff6600;
+}
+.results ul {
+  list-style: none;
+  padding: 0;
+}
+
+.results li div {
+  
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid #ccc;
+  gap: 50px;
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 4px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+.results li{
+  
+  padding: 0px 50px 0px 170px;
+  margin-bottom: 30px;
+}
+
+.results> h2 {
+  margin: 30px 0px 20px 0px;
+  margin-left: 30px;
+}
+.flight_image{
+  width: 100px;
+  height: 50px;
+}
+
+
+/* Footer */
+footer {
+  background-color: #0d7fb0;
+  color: white;
+  padding: 10px 0;
+}
