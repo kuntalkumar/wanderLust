@@ -1,7 +1,8 @@
 import React from "react";
 import { Route, Routes } from "react-router-dom";
-<<<<<<< HEAD
+// <<<<<<< HEAD
 import Home from "../Component/Home/Home";
+import Footer from "../Component/Footer/Footer";
 
 const AllRoutes = () => {
   return (
@@ -12,27 +13,24 @@ const AllRoutes = () => {
 };
 
 export default AllRoutes;
-=======
-import PlaceCard from "../Component/PlaceCard";
-import Hotel from "../Component/Hotels";
-import Details from "../Component/Details";
-import Payment from "../Component/Payment";
+// =======
+// import PlaceCard from "../Component/PlaceCard";
+// import Hotel from "../Component/Hotels";
+// import Details from "../Component/Details";
+// import Payment from "../Component/Payment";
 
+// const AllRoutes = () => {
+//     return (
 
-const AllRoutes = () => {
-    return (
+//         <Routes>
+//         <Route exact path='/holidays' element={<PlaceCard/>} />
+//         <Route exact path='/hotels' element={<Hotel/>} />
+//         <Route path='/hotels/:id' element={<Details/>} />
+//         <Route path='/payment' element={<Payment/>} />
 
-        <Routes>
-        <Route exact path='/holidays' element={<PlaceCard/>} />
-        <Route exact path='/hotels' element={<Hotel/>} />
-        <Route path='/hotels/:id' element={<Details/>} />
-        <Route path='/payment' element={<Payment/>} />
-        
+//       </Routes>
+//         );
+//     };
 
-        
-      </Routes>
-        );
-    };
-
-    export default AllRoutes    
->>>>>>> 394563e4197f31ebc3b4da23d0d0a7c760922743
+//     export default AllRoutes
+// >>>>>>> 394563e4197f31ebc3b4da23d0d0a7c760922743

@@ -1,5 +1,7 @@
 import React from "react";
 import "./Footer.css";
+import ScrollToTop from "react-scroll-to-top";
+import { useRef } from "react";
 
 // Importing logo
 import { BiLogoMediumOld } from "react-icons/bi";
@@ -7,7 +9,7 @@ import { ImFacebook } from "react-icons/im";
 import { BsTwitter } from "react-icons/bs";
 import { AiFillGithub, AiFillInstagram, AiFillLinkedin } from "react-icons/ai";
 
-const Footer = () => {
+const Footer = ({ contactUs, scroll }) => {
   return (
     <div className="footer">
       <div className="secContainer container grid">
@@ -83,7 +85,7 @@ const Footer = () => {
           </li>
         </div>
 
-        <div className="footerLinks">
+        <div className="footerLinks" ref={contactUs}>
           <span className="linkTitle">Contach Us</span>
           <span className="phone">+91 98765 43210</span>
           <span className="email">contact@voyawander.com</span>

@@ -24,10 +24,10 @@ const Navbar = () => {
     <div className="navBar">
       <div className="logoDiv">
         <BiLogoMediumOld className="icon" />
-        <span>Voyawander</span>
+        <span className="span">Voyawander</span>
       </div>
       <div className={navbar}>
-        <ul>
+        <ul className="ul">
           <li className="navList">
             <Link to="/">Home</Link>
           </li>

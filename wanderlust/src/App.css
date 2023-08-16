@@ -126,18 +126,23 @@ video {
 }
 
 .secTitle {
-  display: none;
+  display: grid;
   text-align: center;
   padding: 1rem 0;
   font-size: 25px;
+  font-weight: 700;
   color: var(--blackColor);
   flex-direction: column;
   gap: 1rem;
 
-  p {
+  .secTitlep {
     color: var(--blackColor);
     font-size: var(--normalFontSize);
     font-weight: 400;
+  }
+
+  .h3Heading {
+    font-size: var(--h1FontSize);
   }
 }
 
@@ -179,3 +184,15 @@ video {
   border-radius: var(--borderRadius);
 }
 /* Above Styling will take effect in future DO NOT REMOVE */
+
+/* Media Queries */
+@media screen and (min-width) {
+  .section {
+    padding: 4rem 0 3rem;
+  }
+
+  .container {
+    width: 75%;
+    margin: auto;
+  }
+}

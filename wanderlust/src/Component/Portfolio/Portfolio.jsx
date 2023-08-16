@@ -17,7 +17,7 @@ const Portfolio = () => {
           <div className="leftContent">
             <div className="secHeading">
               <h3 className="h3Heading">Why Should You Choose Us</h3>
-              <p>
+              <p className="p">
                 We have extensive knowledge and experience in the travel
                 industry
               </p>
@@ -71,7 +71,7 @@ const Portfolio = () => {
           </div>
 
           <div className="rightContent">
-            <img src={image} alt="" />
+            <img src={image} alt="" className="img"/>
           </div>
         </div>
       </div>

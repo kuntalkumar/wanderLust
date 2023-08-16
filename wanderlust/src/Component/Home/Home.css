@@ -71,3 +71,131 @@
     display: none;
   }
 }
+
+/* Media Queries */
+@media screen and (min-width: 480px) {
+  .Home {
+    .sectionText {
+      padding: 0 2rem;
+      justify-content: center;
+      text-align: center;
+      width: 100%;
+
+      .h1Heading {
+        font-size: var(--biggestFontSize);
+        font-weight: 900;
+      }
+
+      .pHeading {
+        padding: 1rem 0;
+        font-size: var(--h2FontSize);
+        max-width: 70%;
+        margin: auto;
+      }
+
+      .btn {
+        font-size: var(--h3FontSize);
+        margin: auto;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 769px) {
+  .Home {
+    .sectionText {
+      width: 100%;
+
+      .h1Heading {
+        font-size: 3rem;
+        font-weight: 900;
+        max-width: 70%;
+        margin: auto;
+      }
+
+      .pHeading {
+        padding: 1rem 0;
+        font-size: var(--h2FontSize);
+        max-width: 70%;
+        margin: auto;
+      }
+
+      .btn {
+        gap: 0.5rem;
+        padding-right: 2rem;
+        padding-left: 2rem;
+        font-size: var(--h3FontSize);
+        margin: auto;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1040px) {
+  .Home {
+    position: relative;
+
+    .sectionText {
+      .h1Heading {
+        font-size: 3.3rem;
+        font-weight: 900;
+        max-width: 70%;
+        margin: auto;
+      }
+
+      .pHeading {
+        padding: 1rem 0;
+        font-size: var(--h2FontSize);
+        max-width: 84%;
+        margin: auto;
+      }
+    }
+
+    .popularPlaces {
+      display: block;
+      position: absolute;
+      bottom: 10%;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      .content {
+        .h3Heading {
+          color: var(--whiteColor);
+          padding: 1rem 0;
+          position: relative;
+          &::after {
+            content: "";
+            width: 83%;
+            height: 2px;
+            background: rgb(202, 202, 202);
+            right: 0;
+            bottom: 50%;
+            position: absolute;
+          }
+        }
+
+        .images {
+          align-items: center;
+          justify-content: center;
+          gap: 2rem;
+
+          .img {
+            cursor: pointer;
+            height: 100px;
+            width: 210px;
+            object-fit: cover;
+            border-radius: 10px;
+            transition: all 0.15s ease-in;
+
+            &:hover {
+              scale: 1.05;
+              transition: all 0.15s ease-out;
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -3,6 +3,13 @@ import "./Home.css";
 import Video from "../../Assets/video4.mp4";
 import { AiOutlineSwapRight } from "react-icons/ai";
 import Middle from "../Middle/Middle";
+import Portfolio from "../Portfolio/Portfolio";
+
+// Importing Images
+import image1 from "../../Assets/India gate.jpg";
+import image2 from "../../Assets/Taj mahal agra.jpeg";
+import image3 from "../../Assets/image3.jpeg";
+import image4 from "../../Assets/image4.jpg";
 
 const Home = () => {
   return (
@@ -26,17 +33,18 @@ const Home = () => {
 
         <div className="popularPlaces">
           <div className="content">
-            <h3>Po;ular Places</h3>
+            <h3 className="h3Heading">Popular Places</h3>
             <div className="images flex">
-              {/* <img src="" alt="" />
-            <img src="" alt="" />
-            <img src="" alt="" />
-            <img src="" alt="" /> */}
+              <img src={image1} alt="" className="img" />
+              <img src={image2} alt="" className="img" />
+              <img src={image3} alt="" className="img" />
+              <img src={image4} alt="" className="img" />
             </div>
           </div>
         </div>
       </div>
       <Middle />
+      <Portfolio />
     </>
   );
 };

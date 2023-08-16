@@ -70,3 +70,48 @@
     border-radius: 10px 10px 0 0;
   }
 }
+
+/* Media Queries */
+@media screen and (min-width: 640px) {
+  .accordionContainer {
+    .title {
+      font-size: var(--h3FontSize);
+
+      .iconTitle {
+        .icon {
+          font-size: 1.5rem;
+        }
+      }
+    }
+
+    .description {
+      font-size: var(--normalFontSize);
+    }
+
+    .show {
+      height: 150px;
+    }
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .accordionContainer {
+    .title {
+      font-size: var(--h3FontSize);
+
+      .h3 {
+        .icon {
+          font-size: 1.5rem;
+        }
+      }
+    }
+
+    .description{
+      font-size: var(--normalFontSize);
+    }
+
+    .show{
+      height: 150px;
+    }
+  }
+}
