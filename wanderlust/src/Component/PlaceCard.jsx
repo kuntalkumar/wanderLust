@@ -23,26 +23,20 @@ import {
   ModalContent,
   ModalHeader,
   ModalBody,
-  Spinner,
+  Spinner,Spacer , Link ,  MenuMenuButton,
+  MenuList,
+  MenuItem,
 } from "@chakra-ui/react";
 import { debounce } from "lodash";
 import { FaSearch } from "react-icons/fa";
-import { useNavigate } from "react-router-dom";
-
-
 
 const ModalWithSpinner = ({ isOpen, onClose }) => {
   const [showSpinner, setShowSpinner] = useState(true);
-  const navigate = useNavigate();
-
-//   const handleNavigate = ()=>{
-//     navigate(`/hotels`)
-//   }
 
   useEffect(() => {
     const timer = setTimeout(() => {
       setShowSpinner(false);
-    }, 3000);
+    }, 5000);
 
     return () => clearTimeout(timer);
   }, []);
@@ -51,14 +45,14 @@ const ModalWithSpinner = ({ isOpen, onClose }) => {
     <Modal isOpen={isOpen} onClose={onClose}>
       <ModalOverlay />
       <ModalContent>
-    
+        {/* <ModalHeader>Loading...</ModalHeader> */}
         <ModalBody
           display='flex'
           justifyContent='center'
           alignItems='center'
           bg={"#3199da"}
         >
-        
+          {/* {showSpinner && <Spinner size='xl' />} */}
           <img
             src='https://i.pinimg.com/originals/eb/70/7a/eb707ae7096cc8df384f1bf87dab547a.gif'
             alt=''
@@ -77,7 +71,7 @@ const PlaceCard = () => {
 
   useEffect(() => {
     axios
-      .get("http://localhost:8080/places")
+      .get("https://webdata.onrender.com/places")
       .then((response) => {
         setPlaces(response.data);
       })
@@ -95,7 +89,7 @@ const PlaceCard = () => {
   );
 
   async function handleDelete(newData) {
-    const url = "http://localhost:8080/data/1";
+    const url = "https://webdata.onrender.com/data/1";
     try {
       const response = await axios.delete(url);
       console.log("Data deleted successfully:", response.data);
@@ -104,7 +98,7 @@ const PlaceCard = () => {
     }
 
     try {
-      await axios.post("http://localhost:8080/data", newData);
+      await axios.post("https://webdata.onrender.com/data", newData);
       console.log("Data stored successfully");
     } catch (error) {
       console.error("Error storing data:", error);
@@ -120,11 +114,11 @@ const PlaceCard = () => {
       id: 1,
     };
 
-    setIsModalOpen(true); 
+    setIsModalOpen(true); // Open the modal
 
     try {
       const response = await axios.get(
-        "http://localhost:8080/data"
+        "https://webdata.onrender.com/data"
       );
       setData(response.data.length);
       console.log(data);
@@ -137,42 +131,44 @@ const PlaceCard = () => {
     }
 
     try {
-      await axios.post("http://localhost:8080/data", newData);
+      await axios.post("https://webdata.onrender.com/data", newData);
       console.log("Data stored successfully");
     } catch (error) {
       console.error("Error storing data:", error);
     }
 
     setTimeout(() => {
-      setIsModalOpen(false); 
-
-
-    //   navigate(`/hotels`)
+      setIsModalOpen(false); // Close the modal after 5 seconds
+      window.location.href = "/hotels";
     }, 2000);
   };
 
   return (
-    <Box bgColor={"#cceaf7"} marginTop={-40}>
-      <Box bgColor={"#29335c"} h={160}></Box>
+
+
+    
+    <Box bgColor={"#cceaf7"} marginTop={8}>
+  
       <Heading
         pt={100}
         fontWeight={600}
         fontSize={{ base: "2xl", sm: "4xl", md: "6xl" }}
-        lineHeight={"110%"}
+        textAlign="center"
+        mb={6}
+        color="black"
       >
         <Text as={"span"} color={"black"}>
-          Search your destination
+          Search your Destination
         </Text>
-
-
       </Heading>
-      <Flex justifyContent={"center"}>
-        <InputGroup mt={4} mb={6} w={600} size={"lg"}>
+      
+      <Flex justifyContent="center" >
+      <InputGroup w={["80%", "80%", "50%"]} size="lg">
           <InputLeftElement
             pointerEvents='none'
             children={<Icon as={FaSearch} color='gray.500' />}
           />
-          <Input style = {{background : "orange" , color : "white"}}
+          <Input
             type='text'
             placeholder='Search by place name'
             onChange={(e) => handleSearch(e.target.value)}
@@ -180,37 +176,50 @@ const PlaceCard = () => {
           />
         </InputGroup>
       </Flex>
-      <Grid templateColumns='repeat(4, 1fr)' gap={10} p={5}>
+      <Grid templateColumns={["repeat(1, 1fr)", "repeat(2, 1fr)", "repeat(4, 1fr)"]} gap={6} p={5}>
         {filteredPlaces.map((place) => (
-          <ChakraCard key={place.id} maxW='lg'>
-            <Heading size='lg'>{place.desc}</Heading>
+          <ChakraCard key={place.id} maxW='md' p={2} bg={"white"} 
+          // _hover={{
+            // transform: "scale(1.04)", 
+            // transition: "transform 0.3s ease-in-out", 
+          // }}
+          >
             <CardBody>
-                <div style = {{display : "flex" ,   }}>
-                <div>
-                <Image src={place.image} alt={place.name} borderRadius='lg' width="90%" />
-                </div>
-                <div>
-                <Stack mt='6' spacing='3'>
+            {/* <Heading size='lg'>{place.desc}</Heading> */}
+              <Image src={place.image} alt={place.name} borderRadius='lg'  height={['150px', '150px', '200px']} />
+              <Stack mt='6' spacing='3'>
                 <Heading size='lg'>{place.name}</Heading>
-                <Text color='blue.600' fontSize='lg'>
-                  Price per person: {place.price}
+                <Text color='blue.600' fontSize='1xl'>
+                 {place.price}
                 </Text>
               </Stack>
-                </div>
-                </div>
-                
             </CardBody>
             <Divider />
-            <CardFooter >
-              <ButtonGroup spacing='2'>
+            <CardFooter>
+              <ButtonGroup spacing='40'>
                 <Button
                   variant='solid'
                   colorScheme='orange'
-                //   onClick={handleNavigate}
+                  _hover={{
+                    backgroundColor: "orange.600", // Change background color on hover
+                  }}
+                  onClick={() => {
+                    handleClick(place);
+                  }}
                 >
                   Book Now
                 </Button>
+
+                {/* <Button
+                  variant='solid'
+                  colorScheme='orange'
+                >
+                  More Details
+                </Button> */}
               </ButtonGroup>
+              <Text color='blue.600' fontSize='2xl' pl={10}>
+                {/* Days: {place.days} */}
+              </Text>
             </CardFooter>
           </ChakraCard>
         ))}

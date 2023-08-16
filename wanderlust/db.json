@@ -1,31 +1,6 @@
 {
   "data": [
     {
-      "placeName": "Manali",
-      "placePrice": "Book hotels with no payments now and pay later",
-      "placeImage": "https://i.ytimg.com/vi/FxXXHglhCTQ/maxresdefault.jpg",
-      "days": 5,
-      "id": 1
-    }
-  ],
-  "places": [
-    {
-      "id": 1,
-      "desc": "Enjoy Unparalleled Services",
-      "name": "Shimla",
-      "price": "with flexible check-ins for 3 , 6 or 9 hours!",
-      "image": "https://www.swantour.com/blogs/wp-content/uploads/2019/04/Adventure-Activities-in-Shimla.jpg",
-      "days": 4
-    },
-    {
-      "id": 2,
-      "desc": "Ultra-Premium Stays, Only for You!",
-      "name": "Manali",
-      "price": "Book hotels with no payments now and pay later",
-      "image": "https://i.ytimg.com/vi/FxXXHglhCTQ/maxresdefault.jpg",
-      "days": 5
-    },
-    {
       "id": 3,
       "desc": "Presenting Long Weekend",
       "name": "Darjeeling",
@@ -34,34 +9,84 @@
       "days": 6
     },
     {
-      "id": 4,
-      "name": "Mussoorie",
-      "desc": "Ultra-Premium Stays, Only for You!",
-      "price": "with flexible check-ins for 3 , 6 or 9 hours!",
-      "image": "https://www.haribhoomi.com/h-upload/2023/04/02/1913088-mussoorie.webp",
-      "days": 3
-    },
+      "id": 10,
+      "desc": "Enjoy Unparalleled Services",
+      "name": "Gangtok",
+      "price": "Book hotels with no payments now and pay later",
+      "image": "https://www.footprintholiday.com/uploads/destination_image/1639111919-2021-12-10.jpg",
+      "days": 6
+    }
+  ],
+  "places": [
     {
       "id": 5,
       "desc": "Enjoy Unparalleled Services",
       "name": "Ooty",
-      "price": "Book hotels with no payments now and pay later",
+      "price": "Choose from a wide range of properties which Booking.com offers. Search now! Great Availability. No Booking Fees. Special Offers. Best Price Guarantee. Book your Hotel in Ooty online. No reservation costs. Great rates. Save 10% with...",
       "image": "https://www.travel2ooty.com/images/must-visit-places-ooty.jpg",
       "days": 6
+    },
+    {
+      "id": 19,
+      "name": "Amritsar",
+      "desc": "Presenting Long Weekend",
+      "price": "The fourth Guru of Sikhs, Guru Ram Das, who had initially constructed a pool here, founded Amritsar, which houses the Golden Temple or Harmandir Sahib. It is here that Sage Valmiki wrote the epic, Ramayana. Rama and Sita are believed to have spent their fourteen-year exile in Amritsar, the epicenter of Sikhism.",
+      "image": "https://img.onmanorama.com/content/dam/mm/en/food/features/images/2022/3/21/amritsar-food-guide.jpg",
+      "days": 3
     },
     {
       "id": 6,
       "name": "Nainital",
       "desc": "Presenting Long Weekend",
-      "price": "Stays with the Best Views",
+      "price": "It is also known for the revered Naina Devi temple, which stands on the edge of the lake. Nainital is not only a famous tourist destination but is also known for its prestigious educational institutions and schools, which have stood since the British era.",
       "image": "https://www.honeymoonbug.com/blog/wp-content/uploads/2023/01/Nainital.jpg",
       "days": 5
+    },
+    {
+      "id": 2,
+      "desc": "Ultra-Premium Stays, Only for You!",
+      "name": "Manali",
+      "price": "Manali is known for its unlimited adventure opportunities, the famous Hadimba Temple, the scenic Rohtang Pass, the snow-laden Solang Valley and its delightful culinary scene.",
+      "image": "https://i.ytimg.com/vi/FxXXHglhCTQ/maxresdefault.jpg",
+      "days": 5
+    },
+    {
+      "id": 20,
+      "desc": "Enjoy Unparalleled Services",
+      "name": "Rishikesh",
+      "price": "Rishikesh has numerous ashrams, some of which are internationally recognised as centres of philosophical studies, yoga and other ancient Indian traditions of wellness. The Uttarakhand Tourism Development Board organises the annual International Yog Festival (IYF) here, which attracts thousands of yoga enthusiasts.",
+      "image": "https://i.ytimg.com/vi/9WNX1Uf9gls/maxresdefault.jpg",
+      "days": 4
+    },
+    {
+      "id": 1,
+      "desc": "Enjoy Unparalleled Services",
+      "name": "Shimla",
+      "price": "The land of Varanasi (Kashi) has been the ultimate pilgrimage spot for Hindus for ages. Hindus believe that one who is graced to die on the land of Varanasi would attain salvation and freedom from the cycle of birth and re-birth. Abode of Lord Shiva and Parvati, the origins of Varanasi are yet unknown.",
+      "image": "https://www.swantour.com/blogs/wp-content/uploads/2019/04/Adventure-Activities-in-Shimla.jpg",
+      "days": 4
+    },
+    {
+      "id": 14,
+      "desc": "Enjoy Unparalleled Services",
+      "name": "Goa",
+      "price": "Shimla is famous for its stunning natural beauty, colonial architecture, and old-world charm. There are many places that command picturesque views of the sun rising or setting amidst the hill range at the horizon.",
+      "image": "https://www.kayak.co.in/rimg/himg/61/89/b7/leonardo-2620257-101156480-681214.jpg?width=1366&height=768&crop=true",
+      "days": 5
+    },
+    {
+      "id": 4,
+      "name": "Mussoorie",
+      "desc": "Ultra-Premium Stays, Only for You!",
+      "price": "Mussoorie, the queen of hill stations, is famous for its scenic beauty, good social life and entertainment. The excellent climate makes it an attractive holiday resort. Thronged by holidayers, it vibrates with gaiety and merry making during the summer season.",
+      "image": "https://www.haribhoomi.com/h-upload/2023/04/02/1913088-mussoorie.webp",
+      "days": 3
     },
     {
       "id": 7,
       "name": "Munnar",
       "desc": "Ultra-Premium Stays, Only for You!",
-      "price": "with flexible check-ins for 3 , 6 or 9 hours!",
+      "price": "Virgin forests, savannah, rolling hills, scenic valleys, numerous streams, huge splashy waterfalls, sprawling tea plantations and winding walkways are all part of the great holiday experience on offer for a traveler to Munnar.",
       "image": "https://www.keralapackage.org/wp-content/uploads/2017/08/Munnar-big.jpg",
       "days": 4
     },
@@ -69,7 +94,7 @@
       "id": 8,
       "name": "Coorg",
       "desc": "Presenting Long Weekend",
-      "price": "Book hotels with no payments now and pay later",
+      "price": "The coffee plantations of Coorg are famous globally and attract many tourists. The remote and less popular waterfalls also make for beautiful photographs and lush natural beauty. These are some of the top reasons to plan a trip to Coorg.",
       "image": "https://holidayinfy.com/wp-content/uploads/2020/07/11-famous-Coorg-tourist-places.jpg",
       "days": 5
     },
@@ -77,23 +102,15 @@
       "id": 9,
       "desc": "Enjoy Unparalleled Services",
       "name": "Kodaikanal",
-      "price": "Stays with the Best Views",
+      "price": "The coffee plantations of Coorg are famous globally and attract many tourists. The remote and less popular waterfalls also make for beautiful photographs and lush natural beauty. These are some of the top reasons to plan a trip to Coorg.",
       "image": "https://i.ytimg.com/vi/ltT6a7dM7RU/maxresdefault.jpg",
       "days": 5
-    },
-    {
-      "id": 10,
-      "desc": "Enjoy Unparalleled Services",
-      "name": "Gangtok",
-      "price": "Book hotels with no payments now and pay later",
-      "image": "https://www.footprintholiday.com/uploads/destination_image/1639111919-2021-12-10.jpg",
-      "days": 6
     },
     {
       "id": 11,
       "name": "Jaipur",
       "desc": "Ultra-Premium Stays, Only for You!",
-      "price": "with flexible check-ins for 3 , 6 or 9 hours!",
+      "price": "The land of Varanasi (Kashi) has been the ultimate pilgrimage spot for Hindus for ages. Hindus believe that one who is graced to die on the land of Varanasi would attain salvation and freedom from the cycle of birth and re-birth. Abode of Lord Shiva and Parvati, the origins of Varanasi are yet unknown.",
       "image": "https://ghoomophiro.com/wp-content/uploads/2022/11/Places-to-visit-in-jaipur.jpg",
       "days": 3
     },
@@ -101,7 +118,7 @@
       "id": 12,
       "name": "Agra",
       "desc": "Presenting Long Weekend",
-      "price": "Stays with the Best Views",
+      "price": "The land of Varanasi (Kashi) has been the ultimate pilgrimage spot for Hindus for ages. Hindus believe that one who is graced to die on the land of Varanasi would attain salvation and freedom from the cycle of birth and re-birth. Abode of Lord Shiva and Parvati, the origins of Varanasi are yet unknown.",
       "image": "https://www.sunrisetajmahaltour.com/wp-content/uploads/2021/09/zigzag-hostel-agra.jpg",
       "days": 2
     },
@@ -109,23 +126,15 @@
       "id": 13,
       "name": "Varanasi",
       "desc": "Ultra-Premium Stays, Only for You!",
-      "price": "Book hotels with no payments now and pay later",
+      "price": "The land of Varanasi (Kashi) has been the ultimate pilgrimage spot for Hindus for ages. Hindus believe that one who is graced to die on the land of Varanasi would attain salvation and freedom from the cycle of birth and re-birth. Abode of Lord Shiva and Parvati, the origins of Varanasi are yet unknown.",
       "image": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0a/be/17/41/caption.jpg?w=700&h=500&s=1",
       "days": 4
-    },
-    {
-      "id": 14,
-      "desc": "Enjoy Unparalleled Services",
-      "name": "Goa",
-      "price": "Stays with the Best Views",
-      "image": "https://www.kayak.co.in/rimg/himg/61/89/b7/leonardo-2620257-101156480-681214.jpg?width=1366&height=768&crop=true",
-      "days": 5
     },
     {
       "id": 15,
       "name": "Mumbai",
       "desc": "Ultra-Premium Stays, Only for You!",
-      "price": "Stays with the Best Views",
+      "price": "The coffee plantations of Coorg are famous globally and attract many tourists. The remote and less popular waterfalls also make for beautiful photographs and lush natural beauty. These are some of the top reasons to plan a trip to Coorg.",
       "image": "https://images.myguide-cdn.com/mumbai/companies/bollywood-filmcity-tour-with-mega-dance-show/large/bollywood-filmcity-tour-with-mega-dance-show-1250045.jpg",
       "days": 4
     },
@@ -133,7 +142,7 @@
       "id": 16,
       "desc": "Enjoy Unparalleled Services",
       "name": "Delhi",
-      "price": "with flexible check-ins for 3 , 6 or 9 hours!",
+      "price": "The land of Varanasi (Kashi) has been the ultimate pilgrimage spot for Hindus for ages. Hindus believe that one who is graced to die on the land of Varanasi would attain salvation and freedom from the cycle of birth and re-birth. Abode of Lord Shiva and Parvati, the origins of Varanasi are yet unknown.",
       "image": "https://images.moneycontrol.com/static-mcnews/2021/08/India-Gate-New-Delhi.jpg?impolicy=website&width=770&height=431",
       "days": 3
     },
@@ -141,7 +150,7 @@
       "id": 17,
       "name": "Kolkata",
       "desc": "Ultra-Premium Stays, Only for You!",
-      "price": "with flexible check-ins for 3 , 6 or 9",
+      "price": "The coffee plantations of Coorg are famous globally and attract many tourists. The remote and less popular waterfalls also make for beautiful photographs and lush natural beauty. These are some of the top reasons to plan a trip to Coorg.",
       "image": "https://static.langimg.com/photo/imgsize-159152,msid-96063274/eisamay.jpg",
       "days": 4
     },
@@ -149,31 +158,11 @@
       "id": 18,
       "name": "Udaipur",
       "desc": "Ultra-Premium Stays, Only for You!",
-      "price": "with flexible check-ins for 3 , 6 or 9 hours!",
+      "price": "The coffee plantations of Coorg are famous globally and attract many tourists. The remote and less popular waterfalls also make for beautiful photographs and lush natural beauty. These are some of the top reasons to plan a trip to Coorg.",
       "image": "https://www.oyorooms.com/travel-guide/wp-content/uploads/2021/04/Blog-1-Jaipur-1.jpg",
       "days": 3
-    },
-    {
-      "id": 19,
-      "name": "Amritsar",
-      "desc": "Presenting Long Weekend",
-      "price": "Book hotels with no payments now and pay later",
-      "image": "https://img.onmanorama.com/content/dam/mm/en/food/features/images/2022/3/21/amritsar-food-guide.jpg",
-      "days": 3
-    },
-    {
-      "id": 20,
-      "desc": "Enjoy Unparalleled Services",
-      "name": "Rishikesh",
-      "price": "with flexible check-ins for 3 , 6 or 9 hours!",
-      "image": "https://i.ytimg.com/vi/9WNX1Uf9gls/maxresdefault.jpg",
-      "days": 4
     }
   ],
-
-
-
-
   "hotels": [
     {
       "id": "h001",
@@ -182,7 +171,6 @@
       "description": "Located just a 20-minute scooter ride from the vibrant centre of Ubud.",
       "room_price": "43201",
       "rating": 5,
-      
       "facilities": [
         "AC",
         "Free-WiFi",
@@ -191,14 +179,14 @@
       ],
       "address": "123 Main Street,",
       "title": "Entire cabin hosted by Eco Six Bali",
-    "heading": "Dome - Bamboo Villa in Eco Six Bali",
-    "urls": "https://a0.muscache.com/im/pictures/4a5c629b-9c92-450e-8d8f-995875798838.jpg?im_w=960",
-    "url1": "https://a0.muscache.com/im/pictures/08a9afde-e2f2-48aa-b8b0-a7e747318943.jpg?im_w=480",
-    "url2": "https://a0.muscache.com/im/pictures/b51f509a-9c94-4d1c-a31c-1a465e1670ac.jpg?im_w=480",
-    "url3": "https://a0.muscache.com/im/pictures/0295e1cd-09fe-448a-b837-7bf5ade3809c.jpg?im_w=480",
-    "url4": "https://a0.muscache.com/im/pictures/6d3f81b5-affa-4c13-8681-4081d2568be6.jpg?im_w=480",
-    "guestDetail": "4 guests2-bedrooms2-beds2-bathrooms",
-    "description1": "The Dome is a one bedroom bamboo villa built on two floors. Its ground floor houses an open air living room fitted with a dining area, a seating area and balinese style hammock.The living room has direct access to a spacious balinese style garden and the beautiful Santorini style infinity pool.Amenities in the living room include a projector with Netflix, Nespresso coffee machine and refrigerated minibar.The master bedroom on the upper floor is fitted with a king size bed, a walk-in wardrobe, air conditioning, an in-room bathtub from where our guests can enjoy the beautiful rice fields views and a balcony overlooking the famous volcano Mount Agung. The bedroom houses a modernly equipped bathroom."
+      "heading": "Dome - Bamboo Villa in Eco Six Bali",
+      "urls": "https://a0.muscache.com/im/pictures/4a5c629b-9c92-450e-8d8f-995875798838.jpg?im_w=960",
+      "url1": "https://a0.muscache.com/im/pictures/08a9afde-e2f2-48aa-b8b0-a7e747318943.jpg?im_w=480",
+      "url2": "https://a0.muscache.com/im/pictures/b51f509a-9c94-4d1c-a31c-1a465e1670ac.jpg?im_w=480",
+      "url3": "https://a0.muscache.com/im/pictures/0295e1cd-09fe-448a-b837-7bf5ade3809c.jpg?im_w=480",
+      "url4": "https://a0.muscache.com/im/pictures/6d3f81b5-affa-4c13-8681-4081d2568be6.jpg?im_w=480",
+      "guestDetail": "4 guests2-bedrooms2-beds2-bathrooms",
+      "description1": "The Dome is a one bedroom bamboo villa built on two floors. Its ground floor houses an open air living room fitted with a dining area, a seating area and balinese style hammock.The living room has direct access to a spacious balinese style garden and the beautiful Santorini style infinity pool.Amenities in the living room include a projector with Netflix, Nespresso coffee machine and refrigerated minibar.The master bedroom on the upper floor is fitted with a king size bed, a walk-in wardrobe, air conditioning, an in-room bathtub from where our guests can enjoy the beautiful rice fields views and a balcony overlooking the famous volcano Mount Agung. The bedroom houses a modernly equipped bathroom."
     },
     {
       "id": "h002",
@@ -214,18 +202,15 @@
       ],
       "address": "345 Paradise Lane,",
       "title": "Entire cabin hosted by Eco Six Bali",
-    "heading": "Dome - Bamboo Villa in Eco Six Bali",
-    "urls": "https://a0.muscache.com/im/pictures/4a5c629b-9c92-450e-8d8f-995875798838.jpg?im_w=960",
-    "url1": "https://a0.muscache.com/im/pictures/08a9afde-e2f2-48aa-b8b0-a7e747318943.jpg?im_w=480",
-    "url2": "https://a0.muscache.com/im/pictures/b51f509a-9c94-4d1c-a31c-1a465e1670ac.jpg?im_w=480",
-    "url3": "https://a0.muscache.com/im/pictures/0295e1cd-09fe-448a-b837-7bf5ade3809c.jpg?im_w=480",
-    "url4": "https://a0.muscache.com/im/pictures/6d3f81b5-affa-4c13-8681-4081d2568be6.jpg?im_w=480",
-    "guestDetail": "4 guests2-bedrooms2-beds2-bathrooms",
-    "description1": "The Dome is a one bedroom bamboo villa built on two floors. Its ground floor houses an open air living room fitted with a dining area, a seating area and balinese style hammock.The living room has direct access to a spacious balinese style garden and the beautiful Santorini style infinity pool.Amenities in the living room include a projector with Netflix, Nespresso coffee machine and refrigerated minibar.The master bedroom on the upper floor is fitted with a king size bed, a walk-in wardrobe, air conditioning, an in-room bathtub from where our guests can enjoy the beautiful rice fields views and a balcony overlooking the famous volcano Mount Agung. The bedroom houses a modernly equipped bathroom."
-
+      "heading": "Dome - Bamboo Villa in Eco Six Bali",
+      "urls": "https://a0.muscache.com/im/pictures/4a5c629b-9c92-450e-8d8f-995875798838.jpg?im_w=960",
+      "url1": "https://a0.muscache.com/im/pictures/08a9afde-e2f2-48aa-b8b0-a7e747318943.jpg?im_w=480",
+      "url2": "https://a0.muscache.com/im/pictures/b51f509a-9c94-4d1c-a31c-1a465e1670ac.jpg?im_w=480",
+      "url3": "https://a0.muscache.com/im/pictures/0295e1cd-09fe-448a-b837-7bf5ade3809c.jpg?im_w=480",
+      "url4": "https://a0.muscache.com/im/pictures/6d3f81b5-affa-4c13-8681-4081d2568be6.jpg?im_w=480",
+      "guestDetail": "4 guests2-bedrooms2-beds2-bathrooms",
+      "description1": "The Dome is a one bedroom bamboo villa built on two floors. Its ground floor houses an open air living room fitted with a dining area, a seating area and balinese style hammock.The living room has direct access to a spacious balinese style garden and the beautiful Santorini style infinity pool.Amenities in the living room include a projector with Netflix, Nespresso coffee machine and refrigerated minibar.The master bedroom on the upper floor is fitted with a king size bed, a walk-in wardrobe, air conditioning, an in-room bathtub from where our guests can enjoy the beautiful rice fields views and a balcony overlooking the famous volcano Mount Agung. The bedroom houses a modernly equipped bathroom."
     },
-
-
     {
       "id": "h003",
       "name": "Hotel Holiday Inn",
@@ -255,11 +240,11 @@
       "address": "32 Maharaja Lane,",
       "title": "Entire villa hosted by Wayan",
       "heading": "Aura House 2bds Eco Bamboo House, Pool, River View",
-      "urls": "https://a0.muscache.com/im/pictures/e25a9b25-fa98-4160-bfd1-039287bf38b6.jpg?im_w=960",
-      "url1": "https://a0.muscache.com/im/pictures/miso/Hosting-34113796/original/f4f7b242-db33-46fc-9080-c3d6a6fd55ec.jpeg?im_w=720",
-      "url2": "https://a0.muscache.com/im/pictures/miso/Hosting-34113796/original/4756e699-f474-4ca7-8b77-06b12715a6cb.jpeg?im_w=720",
-      "url3": "https://a0.muscache.com/im/pictures/miso/Hosting-34113796/original/372e7d6f-7fb9-4668-92f0-25bb9a346814.jpeg?im_w=720",
-      "url4": "https://a0.muscache.com/im/pictures/miso/Hosting-34113796/original/fca892a4-3481-4ad1-9f92-404feaa42e9f.jpeg?im_w=720",
+      "urls": "https://a0.muscache.com/im/pictures/4a5c629b-9c92-450e-8d8f-995875798838.jpg?im_w=960",
+      "url1": "https://a0.muscache.com/im/pictures/08a9afde-e2f2-48aa-b8b0-a7e747318943.jpg?im_w=480",
+      "url2": "https://a0.muscache.com/im/pictures/b51f509a-9c94-4d1c-a31c-1a465e1670ac.jpg?im_w=480",
+      "url3": "https://a0.muscache.com/im/pictures/0295e1cd-09fe-448a-b837-7bf5ade3809c.jpg?im_w=480",
+      "url4": "https://a0.muscache.com/im/pictures/6d3f81b5-affa-4c13-8681-4081d2568be6.jpg?im_w=480",
       "guestDetail": "4 guests2-bedrooms2-beds2-bathrooms",
       "description1": "Aura House is perched on top of the Ayung river offering a beautiful view. It features 2 very romantic en-suite bedrooms, a large living room fully furnished, a small kitchen, and a private swimming pool with view.It is the perfect gateway for adventurous couples and honeymoon.The whole house is private - it is just for you and your guests,We are very proud to have in Aura House one of the famous egg shaped door built by the designer company Ibuku. It is the entrance of the second bedroom.The atmosphere of Aura House is perfect for people looking to disconnect from their busy city life and/or nature enthusiasts. Be ready to be awaken by the sun peeking up into your room and the sounds of the river down below."
     },
@@ -277,20 +262,19 @@
       ],
       "address": "13/2 Resort Road ,",
       "title": "Hut hosted by Made",
-    "heading": "BALIAN TREEHOUSE w beautiful pool",
-    "urls": "https://a0.muscache.com/im/pictures/7cc3c855-f90e-4d0f-9b13-3b5c2a3c4bad.jpg?im_w=960",
-    "url1": "https://a0.muscache.com/im/pictures/miso/Hosting-1016153/original/5e249106-66d9-4638-99aa-6b8fc38f3203.jpeg?im_w=720",
-    "url2": "https://a0.muscache.com/im/pictures/0b25f6b3-f215-4938-ac81-581eb3929047.jpg?im_w=720",
-    "url3": "https://a0.muscache.com/im/pictures/9833de62-35b7-41f2-8a24-0d9354150ea7.jpg?im_w=720",
-    "url4": "https://a0.muscache.com/im/pictures/de73abc2-5dc9-4962-ba32-5d28211cdde0.jpg?im_w=720",
-    "guestDetail": "4 guests2-bedrooms2-beds2-bathrooms",
-    "description1": "We have several hangouts in our garden, and our pool is beautiful lit in the evening and turquoise in the daytime just inviting you to jump in. Upstairs is the open living area. The lazy couch on the veranda is overlooking the palm trees (TREEHOUSE) our beautiful garden and pool and has some ocean view aswell. It's the perfect place to wake up and relax drinking your coffee or tea. You can enjoy a nice ocean breeze when you feel its too warm to be outside in the sun or just when you feel the need to be nicely lazy..Inside there is a big (180 x 240) daybed with mosquito net if you need it. Downstairs there is the bedroom, kitchenette, bathroom and a second veranda. We have a rain shower with hot water, there is a standing fan and AC in the bedroom. In the bedroom there is a Flatscreen TV with some channels and movies on demand. The TV has a USB plug so you could take your favo movies or series to watch. We also have a dvd player. We use Indihome fiber for the quickest internet in Bali, so you can stream and download.When arriving at his lovely and special village, you immediately feel all the good Bali has to offer you. Balian is a small surfer/relax village it feels like the older days in Bali.We build the house as green as possible with a lot of decoration found in the nature, like the driftwood from the beach. I put a lot of blood, sweat, fun and tears in building this house. We are always busy expanding and updating the house which has to be done living near the ocean!!Although Made and his wife come to clean everyday it is impossible to get this house sterile, due to the openness and wind and just...nature.So this is not a house for a hosophobic!Everything in the village is in walking distance, but if you would like to go for some sightseeing outside the village, you may want to rent a bike.Please, always wear helmets, not only for your own safety but also the Police will check this regularly.If you would like to go out for dinner:(Luckily) There are no DELI's, STARBUCKS or MACDONALDS in the village but we do have enough nice restaurant to choose from. BALIAN SEGARA, TOM's garden (TOMS SALAD!), Astana had the best burgers (and a lot of sports on TV), Pondok Pitaya, DEKI's, BALIAN beach warung, Gajah Mina, Bintang Balian, the market and others.The market is nearby and has plenty of nice local food for great prices.Ofcourse there is also the possibility to cook your a simple meal in the kitchenette.Feel free to pick your own fruit from the garden! (depending of the season we have coconuts, lemons, papayas, lemongrass, jackfruit, passionfruit and more to come)The area is really safe but we still have a big fire proof safe box were you can put your laptop and other belongings."
+      "heading": "BALIAN TREEHOUSE w beautiful pool",
+      "urls": "https://a0.muscache.com/im/pictures/7cc3c855-f90e-4d0f-9b13-3b5c2a3c4bad.jpg?im_w=960",
+      "url1": "https://a0.muscache.com/im/pictures/miso/Hosting-1016153/original/5e249106-66d9-4638-99aa-6b8fc38f3203.jpeg?im_w=720",
+      "url2": "https://a0.muscache.com/im/pictures/0b25f6b3-f215-4938-ac81-581eb3929047.jpg?im_w=720",
+      "url3": "https://a0.muscache.com/im/pictures/9833de62-35b7-41f2-8a24-0d9354150ea7.jpg?im_w=720",
+      "url4": "https://a0.muscache.com/im/pictures/de73abc2-5dc9-4962-ba32-5d28211cdde0.jpg?im_w=720",
+      "guestDetail": "4 guests2-bedrooms2-beds2-bathrooms",
+      "description1": "We have several hangouts in our garden, and our pool is beautiful lit in the evening and turquoise in the daytime just inviting you to jump in. Upstairs is the open living area. The lazy couch on the veranda is overlooking the palm trees (TREEHOUSE) our beautiful garden and pool and has some ocean view aswell. It's the perfect place to wake up and relax drinking your coffee or tea. You can enjoy a nice ocean breeze when you feel its too warm to be outside in the sun or just when you feel the need to be nicely lazy..Inside there is a big (180 x 240) daybed with mosquito net if you need it. Downstairs there is the bedroom, kitchenette, bathroom and a second veranda. We have a rain shower with hot water, there is a standing fan and AC in the bedroom. In the bedroom there is a Flatscreen TV with some channels and movies on demand. The TV has a USB plug so you could take your favo movies or series to watch. We also have a dvd player. We use Indihome fiber for the quickest internet in Bali, so you can stream and download.When arriving at his lovely and special village, you immediately feel all the good Bali has to offer you. Balian is a small surfer/relax village it feels like the older days in Bali.We build the house as green as possible with a lot of decoration found in the nature, like the driftwood from the beach. I put a lot of blood, sweat, fun and tears in building this house. We are always busy expanding and updating the house which has to be done living near the ocean!!Although Made and his wife come to clean everyday it is impossible to get this house sterile, due to the openness and wind and just...nature.So this is not a house for a hosophobic!Everything in the village is in walking distance, but if you would like to go for some sightseeing outside the village, you may want to rent a bike.Please, always wear helmets, not only for your own safety but also the Police will check this regularly.If you would like to go out for dinner:(Luckily) There are no DELI's, STARBUCKS or MACDONALDS in the village but we do have enough nice restaurant to choose from. BALIAN SEGARA, TOM's garden (TOMS SALAD!), Astana had the best burgers (and a lot of sports on TV), Pondok Pitaya, DEKI's, BALIAN beach warung, Gajah Mina, Bintang Balian, the market and others.The market is nearby and has plenty of nice local food for great prices.Ofcourse there is also the possibility to cook your a simple meal in the kitchenette.Feel free to pick your own fruit from the garden! (depending of the season we have coconuts, lemons, papayas, lemongrass, jackfruit, passionfruit and more to come)The area is really safe but we still have a big fire proof safe box were you can put your laptop and other belongings."
     },
-
     {
       "id": "h006",
       "name": "Roseate House",
-      "image":"https://a0.muscache.com/im/pictures/7cc3c855-f90e-4d0f-9b13-3b5c2a3c4bad.jpg?im_w=720",
+      "image": "https://a0.muscache.com/im/pictures/7cc3c855-f90e-4d0f-9b13-3b5c2a3c4bad.jpg?im_w=720",
       "room_price": "43201",
       "rating": 3,
       "facilities": [
@@ -301,14 +285,14 @@
       ],
       "address": "31 Chwari Bajar Lane, ",
       "title": "Hut hosted by Made",
-    "heading": "BALIAN TREEHOUSE w beautiful pool",
-    "urls": "https://a0.muscache.com/im/pictures/7cc3c855-f90e-4d0f-9b13-3b5c2a3c4bad.jpg?im_w=960",
-    "url1": "https://a0.muscache.com/im/pictures/miso/Hosting-1016153/original/5e249106-66d9-4638-99aa-6b8fc38f3203.jpeg?im_w=720",
-    "url2": "https://a0.muscache.com/im/pictures/0b25f6b3-f215-4938-ac81-581eb3929047.jpg?im_w=720",
-    "url3": "https://a0.muscache.com/im/pictures/9833de62-35b7-41f2-8a24-0d9354150ea7.jpg?im_w=720",
-    "url4": "https://a0.muscache.com/im/pictures/de73abc2-5dc9-4962-ba32-5d28211cdde0.jpg?im_w=720",
-    "guestDetail": "4 guests2-bedrooms2-beds2-bathrooms",
-    "description1": "We have several hangouts in our garden, and our pool is beautiful lit in the evening and turquoise in the daytime just inviting you to jump in. Upstairs is the open living area. The lazy couch on the veranda is overlooking the palm trees (TREEHOUSE) our beautiful garden and pool and has some ocean view aswell. It's the perfect place to wake up and relax drinking your coffee or tea. You can enjoy a nice ocean breeze when you feel its too warm to be outside in the sun or just when you feel the need to be nicely lazy..Inside there is a big (180 x 240) daybed with mosquito net if you need it. Downstairs there is the bedroom, kitchenette, bathroom and a second veranda. We have a rain shower with hot water, there is a standing fan and AC in the bedroom. In the bedroom there is a Flatscreen TV with some channels and movies on demand. The TV has a USB plug so you could take your favo movies or series to watch. We also have a dvd player. We use Indihome fiber for the quickest internet in Bali, so you can stream and download.When arriving at his lovely and special village, you immediately feel all the good Bali has to offer you. Balian is a small surfer/relax village it feels like the older days in Bali.We build the house as green as possible with a lot of decoration found in the nature, like the driftwood from the beach. I put a lot of blood, sweat, fun and tears in building this house. We are always busy expanding and updating the house which has to be done living near the ocean!!Although Made and his wife come to clean everyday it is impossible to get this house sterile, due to the openness and wind and just...nature.So this is not a house for a hosophobic!Everything in the village is in walking distance, but if you would like to go for some sightseeing outside the village, you may want to rent a bike.Please, always wear helmets, not only for your own safety but also the Police will check this regularly.If you would like to go out for dinner:(Luckily) There are no DELI's, STARBUCKS or MACDONALDS in the village but we do have enough nice restaurant to choose from. BALIAN SEGARA, TOM's garden (TOMS SALAD!), Astana had the best burgers (and a lot of sports on TV), Pondok Pitaya, DEKI's, BALIAN beach warung, Gajah Mina, Bintang Balian, the market and others.The market is nearby and has plenty of nice local food for great prices.Ofcourse there is also the possibility to cook your a simple meal in the kitchenette.Feel free to pick your own fruit from the garden! (depending of the season we have coconuts, lemons, papayas, lemongrass, jackfruit, passionfruit and more to come)The area is really safe but we still have a big fire proof safe box were you can put your laptop and other belongings."
+      "heading": "BALIAN TREEHOUSE w beautiful pool",
+      "urls": "https://a0.muscache.com/im/pictures/7cc3c855-f90e-4d0f-9b13-3b5c2a3c4bad.jpg?im_w=960",
+      "url1": "https://a0.muscache.com/im/pictures/miso/Hosting-1016153/original/5e249106-66d9-4638-99aa-6b8fc38f3203.jpeg?im_w=720",
+      "url2": "https://a0.muscache.com/im/pictures/0b25f6b3-f215-4938-ac81-581eb3929047.jpg?im_w=720",
+      "url3": "https://a0.muscache.com/im/pictures/9833de62-35b7-41f2-8a24-0d9354150ea7.jpg?im_w=720",
+      "url4": "https://a0.muscache.com/im/pictures/de73abc2-5dc9-4962-ba32-5d28211cdde0.jpg?im_w=720",
+      "guestDetail": "4 guests2-bedrooms2-beds2-bathrooms",
+      "description1": "We have several hangouts in our garden, and our pool is beautiful lit in the evening and turquoise in the daytime just inviting you to jump in. Upstairs is the open living area. The lazy couch on the veranda is overlooking the palm trees (TREEHOUSE) our beautiful garden and pool and has some ocean view aswell. It's the perfect place to wake up and relax drinking your coffee or tea. You can enjoy a nice ocean breeze when you feel its too warm to be outside in the sun or just when you feel the need to be nicely lazy..Inside there is a big (180 x 240) daybed with mosquito net if you need it. Downstairs there is the bedroom, kitchenette, bathroom and a second veranda. We have a rain shower with hot water, there is a standing fan and AC in the bedroom. In the bedroom there is a Flatscreen TV with some channels and movies on demand. The TV has a USB plug so you could take your favo movies or series to watch. We also have a dvd player. We use Indihome fiber for the quickest internet in Bali, so you can stream and download.When arriving at his lovely and special village, you immediately feel all the good Bali has to offer you. Balian is a small surfer/relax village it feels like the older days in Bali.We build the house as green as possible with a lot of decoration found in the nature, like the driftwood from the beach. I put a lot of blood, sweat, fun and tears in building this house. We are always busy expanding and updating the house which has to be done living near the ocean!!Although Made and his wife come to clean everyday it is impossible to get this house sterile, due to the openness and wind and just...nature.So this is not a house for a hosophobic!Everything in the village is in walking distance, but if you would like to go for some sightseeing outside the village, you may want to rent a bike.Please, always wear helmets, not only for your own safety but also the Police will check this regularly.If you would like to go out for dinner:(Luckily) There are no DELI's, STARBUCKS or MACDONALDS in the village but we do have enough nice restaurant to choose from. BALIAN SEGARA, TOM's garden (TOMS SALAD!), Astana had the best burgers (and a lot of sports on TV), Pondok Pitaya, DEKI's, BALIAN beach warung, Gajah Mina, Bintang Balian, the market and others.The market is nearby and has plenty of nice local food for great prices.Ofcourse there is also the possibility to cook your a simple meal in the kitchenette.Feel free to pick your own fruit from the garden! (depending of the season we have coconuts, lemons, papayas, lemongrass, jackfruit, passionfruit and more to come)The area is really safe but we still have a big fire proof safe box were you can put your laptop and other belongings."
     },
     {
       "id": "h007",
@@ -323,13 +307,12 @@
         "Free Pool Access"
       ],
       "address": "123 Main Street,"
-    }
-    ,
+    },
     {
       "id": "h008",
       "name": "Radisson Blu Tower",
       "image": "https://a0.muscache.com/im/pictures/4f70b681-a792-4530-8c52-f2a8d262942d.jpg?im_w=720",
-      "room_price":"45201",
+      "room_price": "45201",
       "rating": 4,
       "facilities": [
         "AC",
@@ -339,19 +322,16 @@
       ],
       "address": "13/2 Resort Road ,",
       "title": "Treehouse hosted by Veluvana",
-    "heading": "Veluvana Bali - Owl Bamboo House",
-    "urls": "https://a0.muscache.com/im/pictures/prohost-api/Hosting-46761225/original/11058c0d-fac8-4035-8f16-8b3abe7441cd.jpeg?im_w=960",
-    "url1": "https://a0.muscache.com/im/pictures/e15ee353-0861-44ed-868a-56091755e513.jpg?im_w=720",
-    "url2": "https://a0.muscache.com/im/pictures/miso/Hosting-43629767/original/ec85ccc0-281c-44fc-a061-bc1e87ea0081.jpeg?im_w=720",
-    "url3": "https://a0.muscache.com/im/pictures/45a3aa2b-ce00-4068-9ebe-9f83ca281fe4.jpg?im_w=720",
-    "url4": "https://a0.muscache.com/im/pictures/f474dfbe-557a-4d07-8d6e-76aba506b5a6.jpg?im_w=720",
-    "guestDetail": "4 guests2-bedrooms2-beds2-bathrooms",
-    "description1": "The bamboo house is located at the main tourist district of Sidemen, a small town with a magnificent landscape in the southern flank of Mount Agung. Sidemen is not a touristy area, it is about a 90-minute drive from Bali Airport and a 45-minute drive from Ubud. Besides the beautiful scenery and the indigenous culture Sidemen also surrounded by a lot of famous tourist destinations in Bali. Some of them include; Lempuyang Temple (The Gateway to Heaven), Besakih (The Mother Temple of Bali), Tirta Gangga Royal Water Palace, Telaga Waja River for Rafting, Amed Diving Spot, and Bias Putih the Virgin Beach.Upon arrival at Veluvana bamboo house, you will find the upper ground parking area with a small gazebo on the west side of the entrance and a small front office building in the north-east edge. Take your time in the upper ground to enjoy the welcome drink served by our doorman while resting from a long journey through the wavy road of East Bali.Once you finish your drink, the declining stairs down to the north edge of the upper ground will lead you to the bamboo house. You will not see the building until you reach the lower ground as it is secluded behind the bamboo wall and vegetation. At the lower ground, you will notice a small fish pond to be your silent neighbor during your stay. Spin the leaf door and follow the stone path to head into the ground level of the bamboo house.All part of the building is fully designed for guest enjoyment. Sit back the bamboo couch to watch the painting-like scenery right from the ground level porch. On the left side of the house is a small pool to chill with your partner. While at the right end are the semi-open toilet and the lush rain-forest shower. There is also a kitchenette at the back of the couch that features a sink, a cooler, a coffee maker, a water heater, and seasonal fruit will also be served subject to availability.Climb up to the upper level of the house through the bamboo stairs, you will enter the all bamboo bedroom that facing north to the Sidemen Valley with the green hills and Mount Agung on its back. Half of the room wall is windows with transparent glass that allows sunrise to light up your mind and sunset to color up your soul. The room features a comfort double-sized bed, a single reclining sofa bed, and a cozy bedroom chair where you can kick back and relax with a book or hustling on a laptop before rolling into bed.The upper level of the house also features a balcony on the east side and the dreamy hanging net right in front of your bed. Carefully spin the east door to enjoy sightseeing from the east balcony especially when the sunlight softly appears to charm you up from your restful sleep. If you brave enough to try relaxing on the hanging net while enjoying the magnificent view of Mount Agung, open the north side window and go down slowly to the net. Layback and chill like you were floating on a soft cloud. It is okay to also bring pillows and blanket to the net because anyone can fall asleep by the soft wind of the Sidemen Valley."
+      "heading": "Veluvana Bali - Owl Bamboo House",
+      "urls": "https://a0.muscache.com/im/pictures/prohost-api/Hosting-46761225/original/11058c0d-fac8-4035-8f16-8b3abe7441cd.jpeg?im_w=960",
+      "url1": "https://a0.muscache.com/im/pictures/e15ee353-0861-44ed-868a-56091755e513.jpg?im_w=720",
+      "url2": "https://a0.muscache.com/im/pictures/miso/Hosting-43629767/original/ec85ccc0-281c-44fc-a061-bc1e87ea0081.jpeg?im_w=720",
+      "url3": "https://a0.muscache.com/im/pictures/45a3aa2b-ce00-4068-9ebe-9f83ca281fe4.jpg?im_w=720",
+      "url4": "https://a0.muscache.com/im/pictures/f474dfbe-557a-4d07-8d6e-76aba506b5a6.jpg?im_w=720",
+      "guestDetail": "4 guests2-bedrooms2-beds2-bathrooms",
+      "description1": "The bamboo house is located at the main tourist district of Sidemen, a small town with a magnificent landscape in the southern flank of Mount Agung. Sidemen is not a touristy area, it is about a 90-minute drive from Bali Airport and a 45-minute drive from Ubud. Besides the beautiful scenery and the indigenous culture Sidemen also surrounded by a lot of famous tourist destinations in Bali. Some of them include; Lempuyang Temple (The Gateway to Heaven), Besakih (The Mother Temple of Bali), Tirta Gangga Royal Water Palace, Telaga Waja River for Rafting, Amed Diving Spot, and Bias Putih the Virgin Beach.Upon arrival at Veluvana bamboo house, you will find the upper ground parking area with a small gazebo on the west side of the entrance and a small front office building in the north-east edge. Take your time in the upper ground to enjoy the welcome drink served by our doorman while resting from a long journey through the wavy road of East Bali.Once you finish your drink, the declining stairs down to the north edge of the upper ground will lead you to the bamboo house. You will not see the building until you reach the lower ground as it is secluded behind the bamboo wall and vegetation. At the lower ground, you will notice a small fish pond to be your silent neighbor during your stay. Spin the leaf door and follow the stone path to head into the ground level of the bamboo house.All part of the building is fully designed for guest enjoyment. Sit back the bamboo couch to watch the painting-like scenery right from the ground level porch. On the left side of the house is a small pool to chill with your partner. While at the right end are the semi-open toilet and the lush rain-forest shower. There is also a kitchenette at the back of the couch that features a sink, a cooler, a coffee maker, a water heater, and seasonal fruit will also be served subject to availability.Climb up to the upper level of the house through the bamboo stairs, you will enter the all bamboo bedroom that facing north to the Sidemen Valley with the green hills and Mount Agung on its back. Half of the room wall is windows with transparent glass that allows sunrise to light up your mind and sunset to color up your soul. The room features a comfort double-sized bed, a single reclining sofa bed, and a cozy bedroom chair where you can kick back and relax with a book or hustling on a laptop before rolling into bed.The upper level of the house also features a balcony on the east side and the dreamy hanging net right in front of your bed. Carefully spin the east door to enjoy sightseeing from the east balcony especially when the sunlight softly appears to charm you up from your restful sleep. If you brave enough to try relaxing on the hanging net while enjoying the magnificent view of Mount Agung, open the north side window and go down slowly to the net. Layback and chill like you were floating on a soft cloud. It is okay to also bring pillows and blanket to the net because anyone can fall asleep by the soft wind of the Sidemen Valley."
     }
   ],
-
-
-
   "flights": [
     {
       "image": "https://tse1.mm.bing.net/th?id=OIP.AEbhT7XGlxDiTPYhQiE8xgHaEB&pid=Api&P=0&h=180",
