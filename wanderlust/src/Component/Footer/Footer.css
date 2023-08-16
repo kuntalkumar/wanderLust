@@ -1,0 +1,100 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;500;700;900&display=swap");
+
+:root {
+  --primaryColor: hsl(14, 90%, 53%);
+  --primaryColorLight: hsl(14, 95%, 91%);
+  --bgColor: hsl(0, 0%, 100%);
+  --formColor: hsl(20, 42%, 87%);
+  --whiteColor: hsl(0, 0%, 100%);
+  --blackColor: hsl(0, 0%, 18%);
+  --greyText: hsl(0, 0%, 51%);
+  --inputColor: hsl(330, 12%, 97%);
+  --cardColor: hsl(300, 3%, 94%);
+
+  /* Font */
+  --biggestFontSize: 2.5rem;
+  --h1FontSize: 2rem;
+  --h2FontSize: 1.25rem;
+  --h3FontSize: 1rem;
+  --normalFontSize: 0.938rem;
+  --smallFontSize: 0.813rem;
+  --smallestFontSize: 0.75rem;
+  --borderRadius: 3rem;
+}
+
+.footer {
+  background: var(--primaryColorLight);
+  padding: 2rem 0;
+
+  .secContainer {
+    gap: 1.5rem;
+    text-align: center;
+    align-items: flex-start;
+
+    .logoDiv {
+      .footerLogo {
+        display: flex;
+        color: var(--blackColor);
+        font-weight: 500;
+        cursor: pointer;
+        align-items: center;
+        justify-content: center;
+        padding-bottom: 0.5rem;
+
+        .icon {
+          font-size: 25px;
+          color: var(--blackColor);
+        }
+      }
+
+      .socials {
+        gap: 0.5rem;
+        margin: auto;
+        align-items: center;
+        justify-content: center;
+
+        .icon {
+          font-size: 25px;
+          background: var(--primaryColor);
+          border-radius: 50%;
+          padding: 8px;
+          color: var(--whiteColor);
+          transition: ease 0.15s;
+          &:hover {
+            background: var(--primaryColorLight);
+            color: var(--primaryColor);
+            transition: all 0.2s ease-out;
+          }
+        }
+      }
+    }
+
+    .footerLinks {
+      display: grid;
+      row-gap: 0.2rem;
+
+      .linkTitle {
+        padding-bottom: 0.5rem;
+        color: var(--blackColor);
+        font-weight: 700;
+      }
+
+      .li {
+        &:hover {
+          transform: translate(10px);
+          .a {
+            color: var(--primaryColor);
+          }
+        }
+      }
+
+      .a,
+      .phone,
+      .email {
+        color: var(--blackColor);
+        font-size: 13px;
+        font-weight: 500;
+      }
+    }
+  }
+}

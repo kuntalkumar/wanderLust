@@ -1,0 +1,72 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;500;700;900&display=swap");
+
+:root {
+  --primaryColor: hsl(14, 90%, 53%);
+  --primaryColorLight: hsl(14, 95%, 91%);
+  --bgColor: hsl(0, 0%, 100%);
+  --formColor: hsl(20, 42%, 87%);
+  --whiteColor: hsl(0, 0%, 100%);
+  --blackColor: hsl(0, 0%, 18%);
+  --greyText: hsl(0, 0%, 51%);
+  --inputColor: hsl(330, 12%, 97%);
+  --cardColor: hsl(300, 3%, 94%);
+
+  /* Font */
+  --biggestFontSize: 2.5rem;
+  --h1FontSize: 2rem;
+  --h2FontSize: 1.25rem;
+  --h3FontSize: 1rem;
+  --normalFontSize: 0.938rem;
+  --smallFontSize: 0.813rem;
+  --smallestFontSize: 0.75rem;
+  --borderRadius: 3rem;
+}
+.accordionContainer {
+  .title {
+    font-size: var(--normalFontSize);
+    align-items: center;
+    padding: 1rem;
+    border-radius: 10px;
+    justify-content: space-between;
+    background: var(--primaryColorLight);
+
+    .iconTitle {
+      cursor: pointer;
+      .icon {
+        font-size: 1.2rem;
+        color: var(--blackColor);
+        transition: all 0.3s ease;
+      }
+
+      .transofrmIcon {
+        transform: rotate(180deg);
+        transition: all 0.3s ease;
+      }
+    }
+  }
+
+  .description {
+    font-size: var(--smallFontSize);
+    display: flex;
+    align-items: center;
+    line-height: 20px;
+    white-space: pre-line;
+    height: 0;
+    transition: all 0.3s ease-in-out;
+    opacity: 0;
+    padding: 0 1rem;
+    background: var(--cardColor);
+    border-radius: 0 0 10px 10px;
+    color: var(--blackColor);
+  }
+
+  .show {
+    height: 140px;
+    opacity: 1;
+  }
+
+  .activeTitle {
+    background: var(--primaryColorLight);
+    border-radius: 10px 10px 0 0;
+  }
+}
