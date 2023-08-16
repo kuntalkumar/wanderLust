@@ -3,10 +3,14 @@ import { Route, Routes } from "react-router-dom";
 // <<<<<<< HEAD
 import Home from "../Component/Home/Home";
 import Footer from "../Component/Footer/Footer";
+// import PlaceCard from "../Component/PlaceCard";
 
 const AllRoutes = () => {
   return (
     <Routes>
+      <Route exact path="/" element={<Home />} />
+      {/* <Route exact path="/holidays" element={<PlaceCard />} /> */}
+      <Route exact path="/" element={<Home />} />
       <Route exact path="/" element={<Home />} />
     </Routes>
   );
@@ -14,7 +18,6 @@ const AllRoutes = () => {
 
 export default AllRoutes;
 // =======
-// import PlaceCard from "../Component/PlaceCard";
 // import Hotel from "../Component/Hotels";
 // import Details from "../Component/Details";
 // import Payment from "../Component/Payment";
