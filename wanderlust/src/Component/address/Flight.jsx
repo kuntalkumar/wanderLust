@@ -17,6 +17,8 @@ function Flight() {
 
  const navigate=useNavigate();
 
+ 
+
   const handleSearch = async(e) => {
     e.preventDefault();
 
@@ -32,6 +34,7 @@ function Flight() {
       console.log(response.data);
       setSearchResults(response.data);
       localStorage.setItem('flightSearch', JSON.stringify({ departure, destination, departureDate }));
+      
     }
     catch(error){
       console.log(error);
@@ -70,12 +73,14 @@ function Flight() {
   useEffect(() => {
     const storedData = JSON.parse(localStorage.getItem('flightSearch'));
     if (storedData) {
-      setDeparture(storedData.departure);
-      setDestination(storedData.destination);
-      setDepartureDate(storedData.departureDate);
+      setDeparture(storedData.departure || "");
+      setDestination(storedData.destination || "");
+      setDepartureDate(storedData.departureDate || "");
       
     }
   }, []);
+
+  
   
 
   // const handleFlightSelect = (selectedFlight) => {
@@ -139,7 +144,7 @@ function Flight() {
                 <p>Arrival: {flight.landingTime}</p>
                 <p>TotalTime: {flight.totalTime}</p>
                 <p>Price: ₹ {flight.price}</p>
-                <button onClick={()=>navigate("")} className='flight_btn'>Book Now</button>
+                <button onClick={()=>navigate("")}  className='flight_btn'>Book Now</button>
                 </div>
               </li>
             ))}
