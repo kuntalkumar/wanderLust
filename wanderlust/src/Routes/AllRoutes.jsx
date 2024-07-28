@@ -4,6 +4,7 @@ import PlaceCard from "../Component/PlaceCard";
 import Hotel from "../Component/Hotels";
 import Details from "../Component/Details";
 import Payment from "../Component/Payment";
+import RazorpayPayment from "../Component/Payment/RazorpayPayment";
 
 
 const AllRoutes = () => {
@@ -13,7 +14,7 @@ const AllRoutes = () => {
         <Route exact path='/holidays' element={<PlaceCard/>} />
         <Route exact path='/hotels' element={<Hotel/>} />
         <Route path='/hotels/:id' element={<Details/>} />
-        <Route path='/payment' element={<Payment/>} />
+        <Route path='/payment' element={<RazorpayPayment/>} />
         
 
         

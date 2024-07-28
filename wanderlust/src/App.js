@@ -12,11 +12,8 @@ function App() {
   return (
     <div className="App">
       <AllRoutes/>
-<<<<<<< Updated upstream
     
-=======
    {/* <h1>Hi i am ready</h1> */}
->>>>>>> Stashed changes
       {/* <Payment/>
       <PlaceCard/> */}
       {/* <Hotel/> */}

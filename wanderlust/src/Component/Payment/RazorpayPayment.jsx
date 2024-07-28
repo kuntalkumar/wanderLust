@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { useEffect, useState } from 'react';
 import styled from 'styled-components';
 
 const StyledButton = styled.button`
@@ -8,79 +8,67 @@ const StyledButton = styled.button`
   border: none;
   border-radius: 4px;
   cursor: pointer;
-  transition: background-color 0.3s;
+  transition: background-color 0.3s, transform 0.3s;
 
   &:hover {
     background-color: blue;
     transform: scale(1.1);
-
   }
 `;
 
-class RazorpayPayment extends Component {
-  constructor(props) {
-    super(props);
+const RazorpayPayment = () => {
+  const [checkoutAmount, setCheckoutAmount] = useState(50000 * 100);
+  const [rzpInstance, setRzpInstance] = useState(null);
 
-    this.state = {
-      checkoutAmount: 50000 * 100,
-    };
+  useEffect(() => {
+    loadRazorpayScript();
+  }, []);
 
-    this.rzpInstance = null;
-  }
-
-  componentDidMount() {
-    this.loadRazorpayScript();
-  }
-
-  loadRazorpayScript = () => {
+  const loadRazorpayScript = () => {
     const script = document.createElement('script');
     script.src = 'https://checkout.razorpay.com/v1/checkout.js';
     script.async = true;
     script.onload = () => {
-      this.initializeRazorpay();
+      initializeRazorpay();
     };
     document.body.appendChild(script);
   };
 
-  initializeRazorpay = () => {
+  const initializeRazorpay = () => {
     const options = {
       key: 'rzp_test_Zn3281xQDVCPcN', // Fetch from your server
-      amount: this.state.checkoutAmount,
+      amount: checkoutAmount,
       currency: 'INR',
       name: 'Travel Website',
       description: 'Test Payment',
       image: 'https://your-image-url.com',
-      handler: this.handlePaymentSuccess,
+      handler: handlePaymentSuccess,
     };
 
-    this.rzpInstance = new window.Razorpay(options);
+    setRzpInstance(new window.Razorpay(options));
   };
 
-  handlePaymentClick = (e) => {
-    e.preventDefault();
-    if (this.rzpInstance) {
-      this.rzpInstance.open();
+  const handlePaymentClick = (e) => {
+    // e.preventDefault();
+    if (rzpInstance) {
+      rzpInstance.open();
     } else {
       console.error('Razorpay instance is not initialized.');
     }
   };
-
-  handlePaymentSuccess = (response) => {
-
+handlePaymentClick() /// to automatic load payment page without addresspage 
+  const handlePaymentSuccess = (response) => {
     console.log('Payment Successful', response);
     // Handle the response, e.g., update UI, make API calls
-
   };
 
-  render() {
-    return (
-      <div>
-        <StyledButton onClick={this.handlePaymentClick}>
-          Pay Now
-        </StyledButton>
-      </div>
-    );
-  }
-}
+  return (
+    <div>
+      {/* <StyledButton onClick={handlePaymentClick}>
+        Pay Now
+      </StyledButton> */}
+    </div>
+  );
+};
 
 export default RazorpayPayment;
