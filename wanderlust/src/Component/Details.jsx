@@ -4,7 +4,7 @@ import { Box, ButtonGroup ,Heading, Text, Button, Center, Image, Grid, GridItem,
 import { BiLockAlt, BiWifi, BiWind, BiCoffee, BiDollarCircle, BiBed, BiCar, BiDroplet, BiCreditCard, BiTime, BiGame, BiWorld, BiDoughnutChart, BiWater, BiGroup, BiCube, } from 'react-icons/bi';
 // import details from './style/Details.css'
 
-import { useParams } from 'react-router-dom';
+import { useNavigate, useParams } from 'react-router-dom';
 import axios from 'axios'
 import { Link as Rlink} from 'react-router-dom';
 // import PreLoader from "../MainComp/Loader";
@@ -27,7 +27,7 @@ function Details() {
   useEffect(() => {
     setloding(true);
     axios
-      .get(`https://webdata.onrender.com/hotels/${id}`)
+      .get(`http://localhost:8080/hotels/${id}`)
       .then((response) => {
         console.log(response.data);
         setData(response.data);
@@ -45,6 +45,10 @@ function Details() {
     // return  <PreLoader/>
 
    
+  }
+  const navigate=useNavigate()
+  const handleClick=()=>{
+    navigate("/payment")
   }
   return (
    <Box marginBottom={['15px', '30px']} bgColor="#cceaf7">
@@ -126,17 +130,17 @@ function Details() {
       COST PER NIGHT :- &#8377; {data.room_price}
        </Box>
                 <ButtonGroup spacing="2">
-                <Rlink to={`/payment`}> 
+                {/* <Rlink to={`/payment`}>  */}
                       <Button
                         variant="solid"
                         colorScheme="orange"
                         marginRight="2"
                         paddingRight="4"
                         paddingLeft="4"
-                      >
+                       onClick={()=>handleClick()}>
                         Book Now
                       </Button>
-                </Rlink>
+                {/* </Rlink> */}
                 </ButtonGroup>
               </Flex>
 

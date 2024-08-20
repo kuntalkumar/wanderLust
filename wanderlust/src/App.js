@@ -7,6 +7,10 @@ import Hotel from './Component/Hotels';
 // import Payment from './Component/Payment';
 import AllRoutes from './Routes/AllRoutes'
 import RazorpayPayment from './Component/Payment/RazorpayPayment';
+import Page from './Component/LoginSignup/Page';
+// import Navbar from './Component/NavFoot/Navbar';
+// import FooterTop from './Component/NavFoot/FooterTop';
+// import Footer from './Component/NavFoot/Footer';
 
 function App() {
   return (
@@ -19,6 +23,10 @@ function App() {
       {/* <Hotel/> */}
       {/* <Details/> */}
       {/* <RazorpayPayment/> */}
+      {/* <Navbar/>
+      <Page/>
+      <FooterTop/>
+      <Footer/> */}
     </div>
   );
 }

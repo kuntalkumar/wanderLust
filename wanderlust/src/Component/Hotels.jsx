@@ -56,7 +56,7 @@ const Hotel = () => {
 
   useEffect(() => {
     axios
-      .get("https://webdata.onrender.com/hotels")
+      .get("http://localhost:8080/hotels")
       .then((response) => {
         setHotels(response.data);
       })

@@ -71,7 +71,7 @@ const PlaceCard = () => {
 
   useEffect(() => {
     axios
-      .get("https://webdata.onrender.com/places")
+      .get("http://localhost:8080/places")
       .then((response) => {
         setPlaces(response.data);
       })
@@ -177,7 +177,7 @@ const PlaceCard = () => {
         </InputGroup>
       </Flex>
       <Grid templateColumns={["repeat(1, 1fr)", "repeat(2, 1fr)", "repeat(4, 1fr)"]} gap={6} p={5}>
-        {filteredPlaces.map((place) => (
+        {filteredPlaces?.map((place) => (
           <ChakraCard key={place.id} maxW='md' p={2} bg={"white"} 
           // _hover={{
             // transform: "scale(1.04)", 
