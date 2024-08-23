@@ -30,6 +30,7 @@ import {
 import { debounce } from "lodash";
 import { FaSearch } from "react-icons/fa";
 import Footer from "./Footer/Footer";
+import { useNavigate } from "react-router-dom";
 
 const ModalWithSpinner = ({ isOpen, onClose }) => {
   const [showSpinner, setShowSpinner] = useState(true);
@@ -69,6 +70,7 @@ const PlaceCard = () => {
   const [searchTerm, setSearchTerm] = useState("");
   const [data, setData] = useState([]);
   const [isModalOpen, setIsModalOpen] = useState(false);
+  const navigate=useNavigate()
 
   useEffect(() => {
     axios
@@ -140,7 +142,8 @@ const PlaceCard = () => {
 
     setTimeout(() => {
       setIsModalOpen(false); // Close the modal after 5 seconds
-      window.location.href = "/hotels";
+      // window.location.href = "/hotels";
+      navigate("/hotels")
     }, 2000);
   };
 
