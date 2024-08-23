@@ -20,11 +20,12 @@ const Login = ({ handleLogin }) => {
       handleLogin(email); // Call the onLogin function passed as a prop
     } else {
       setError('Invalid credentials');
+
     }
   };
 
   return (
-    <Box maxW="md" mx="auto" mt={10}>
+    <Box maxW="md" mx="auto" mt={10} >
       <Heading as="h2" size="xl" textAlign="center">
         Login
       </Heading>
@@ -46,6 +47,7 @@ const Login = ({ handleLogin }) => {
         <Button mt={4} colorScheme="teal" type="submit" width="full">
           Login
         </Button>
+      <div></div>
       </form>
     </Box>
   );

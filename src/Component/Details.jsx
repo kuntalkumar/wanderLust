@@ -7,6 +7,8 @@ import { BiLockAlt, BiWifi, BiWind, BiCoffee, BiDollarCircle, BiBed, BiCar, BiDr
 import { useNavigate, useParams } from 'react-router-dom';
 import axios from 'axios'
 import { Link as Rlink} from 'react-router-dom';
+import Footer from './Footer/Footer';
+import RazorpayPayment from './Payment/RazorpayPayment';
 // import PreLoader from "../MainComp/Loader";
 
 const style = {
@@ -23,11 +25,12 @@ function Details() {
   const [data, setData] = useState([]);
   const { id } = useParams();
   const [loading, setloding]=useState(false);
+  const [clickPay,setClickpay]=useState(false)
 
   useEffect(() => {
     setloding(true);
     axios
-      .get(`http://localhost:8080/hotels/${id}`)
+      .get(`https://wanderlust-be-8lk0.onrender.com/hotels/${id}`)
       .then((response) => {
         console.log(response.data);
         setData(response.data);
@@ -48,10 +51,11 @@ function Details() {
   }
   const navigate=useNavigate()
   const handleClick=()=>{
-    navigate("/payment")
+    // navigate("/payment")
+    setClickpay(true)
   }
   return (
-   <Box marginBottom={['15px', '30px']} bgColor="#cceaf7">
+   <Box marginTop={"0px"} paddingTop={"10px"}  bgColor="#cceaf7">
      
       {/* <div style={{ position: 'relative' }}>
         <Image
@@ -76,8 +80,8 @@ function Details() {
       </div> */}
 
 
-      <div style={{ width: '80%', margin: '0 auto' , color:'blue.600', fontWeight:'700' }}>
-        <div marginTop="30px">
+      <div style={{ width: '90%', margin: '0 auto' , color:'blue.600', fontWeight:'700' }}>
+        <div marginTop="0px">
 
         {/* <Text fontSize="40" textAlign="center" mb="4" width="70%" margin="auto" mt={10}   >
          {data.name}  <span style={{color:'blue.600'}} ></span>
@@ -96,14 +100,16 @@ function Details() {
         </Text>
         </div>
         <Center>
-          <div style={{ display: 'flex', flexDirection: ['column', 'row'] }}>
+          <div style={{ display: 'flex', flexDirection: ['column', 'row'], marginTop:"10px" }}>
+
             <div style={{ marginRight: ['0px', '5px'], marginBottom: ['10px', '0px'] }}>
               <Image
                 src={data.urls}
                 alt="N"
-                style={{ width: ['100%', '800px'], height: ['250px', '520px'], borderRadius: ['10px', '10px 0px 0px'] }}
+                style={{ width:"800px", height: "520px", borderRadius: ['10px', '10px 10px 10px'] }}
               />
             </div>
+
             <div style={{ display: 'flex', flexDirection: 'column' }}>
               <Image
                 src={data.url1}
@@ -145,7 +151,8 @@ function Details() {
               </Flex>
 
         </Heading>
-
+{clickPay?<RazorpayPayment price={data.room_price}/>
+:""}
       
 
 
@@ -326,13 +333,17 @@ function Details() {
 
         <Box textAlign="right" marginBottom={5}>
 
-       <Rlink to={`/payment/${id}`}> <button className="button">
+       {/* <Rlink to={`/payment/${id}`}> <button className="button" onClick={()=>{
+        handleClick()
+       }}>
+
       Book Now
-    </button></Rlink> 
+    </button></Rlink>  */}
 </Box>
 
       </div>
-            
+      <Footer/>
+
       </Box>
   );
 }

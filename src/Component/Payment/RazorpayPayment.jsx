@@ -16,13 +16,14 @@ const StyledButton = styled.button`
   }
 `;
 
-const RazorpayPayment = () => {
-  const [checkoutAmount, setCheckoutAmount] = useState(50000 * 100);
+const RazorpayPayment = ({price}) => {
+  console.log("price", price)
+  const [checkoutAmount, setCheckoutAmount] = useState(parseInt(price * 100));
   const [rzpInstance, setRzpInstance] = useState(null);
 
   useEffect(() => {
-    loadRazorpayScript();
-  }, []);
+    loadRazorpayScript(price * 100);
+  }, [price]);
 
   const loadRazorpayScript = () => {
     const script = document.createElement('script');

@@ -62,7 +62,7 @@ const Signup = () => {
   };
 
   return (
-    <Box maxW={{ base: 'sm', md: 'md', lg: 'lg' }} bgColor={"#cceaf7"} mx="auto" mt={10} p={5} borderWidth={1} borderRadius="lg" boxShadow="lg">
+    <Box maxW={{ base: 'sm', md: 'md', lg: 'lg' }}  mx="auto" mt={10} p={5} borderWidth={1} borderRadius="lg" boxShadow="lg">
       <Heading mb={6} textAlign="center">Signup</Heading>
       {authError && (
         <Alert status="error" mb={4}>

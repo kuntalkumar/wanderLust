@@ -17,6 +17,8 @@ import {
 } from "@chakra-ui/react";
 import { StarIcon } from "@chakra-ui/icons";
 import { Link as Rlink } from "react-router-dom";
+import { color } from "framer-motion";
+import Footer from "./Footer/Footer";
 // import useNavigate from 'react-router-dom'
 
 
@@ -39,7 +41,7 @@ const Hotel = () => {
     };
     axios
       .patch(
-        "https://webdata.onrender.com/data/" + lastDataObject.id,
+        "https://wanderlust-be-8lk0.onrender.com/data/" + lastDataObject.id,
         updatedData
       )
       .then((response) => {
@@ -56,7 +58,7 @@ const Hotel = () => {
 
   useEffect(() => {
     axios
-      .get("http://localhost:8080/hotels")
+      .get("https://wanderlust-be-8lk0.onrender.com/hotels")
       .then((response) => {
         setHotels(response.data);
       })
@@ -64,7 +66,7 @@ const Hotel = () => {
         console.log(error);
       });
     axios
-      .get("https://webdata.onrender.com/data")
+      .get("https://wanderlust-be-8lk0.onrender.com/data")
       .then((booking) => {
         setLastBookedHotel(booking.data[booking.data.length - 1]);
       })
@@ -106,10 +108,10 @@ const Hotel = () => {
   return (
     <>
       <Box mt={[-20, -20, -40]}>
-        <Box bgColor={"#29335c"} h={[120, 120, 160]}></Box>
+        <Box bgColor={""} h={[120, 120, 160]}></Box>
         <Grid templateColumns={['repeat(1, 1fr)', 'repeat(2, 1fr)', 'repeat(4, 1fr)']} gap={10} p={[3, 5]} bg={"#cceaf7"}>
           {hotels.map((hotel) => (
-            <Card maxW='md' key={hotel.id} p={2} bg={"white"}>
+            <Card maxW='md' key={hotel.id} p={2} bg={"white"} >
               <Image
                 src={hotel.image}
                 alt={hotel.name}
@@ -178,6 +180,8 @@ const Hotel = () => {
             </Card>
           ))}
         </Grid>
+        <Footer/>
+
       </Box>
     </>
   );

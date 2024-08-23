@@ -29,6 +29,7 @@ import {
 } from "@chakra-ui/react";
 import { debounce } from "lodash";
 import { FaSearch } from "react-icons/fa";
+import Footer from "./Footer/Footer";
 
 const ModalWithSpinner = ({ isOpen, onClose }) => {
   const [showSpinner, setShowSpinner] = useState(true);
@@ -71,7 +72,7 @@ const PlaceCard = () => {
 
   useEffect(() => {
     axios
-      .get("http://localhost:8080/places")
+      .get("https://wanderlust-be-8lk0.onrender.com/places")
       .then((response) => {
         setPlaces(response.data);
       })
@@ -89,7 +90,7 @@ const PlaceCard = () => {
   );
 
   async function handleDelete(newData) {
-    const url = "https://webdata.onrender.com/data/1";
+    const url = "https://wanderlust-be-8lk0.onrender.com/data/1";
     try {
       const response = await axios.delete(url);
       console.log("Data deleted successfully:", response.data);
@@ -98,7 +99,7 @@ const PlaceCard = () => {
     }
 
     try {
-      await axios.post("https://webdata.onrender.com/data", newData);
+      await axios.post("https://wanderlust-be-8lk0.onrender.com/data", newData);
       console.log("Data stored successfully");
     } catch (error) {
       console.error("Error storing data:", error);
@@ -118,7 +119,7 @@ const PlaceCard = () => {
 
     try {
       const response = await axios.get(
-        "https://webdata.onrender.com/data"
+        "https://wanderlust-be-8lk0.onrender.com/data"
       );
       setData(response.data.length);
       console.log(data);
@@ -131,7 +132,7 @@ const PlaceCard = () => {
     }
 
     try {
-      await axios.post("https://webdata.onrender.com/data", newData);
+      await axios.post("https://wanderlust-be-8lk0.onrender.com/data", newData);
       console.log("Data stored successfully");
     } catch (error) {
       console.error("Error storing data:", error);
@@ -147,7 +148,7 @@ const PlaceCard = () => {
 
 
     
-    <Box bgColor={"#cceaf7"} marginTop={8}>
+    <Box bgColor={"#cceaf7"} marginTop={0}>
   
       <Heading
         pt={100}
@@ -228,7 +229,10 @@ const PlaceCard = () => {
         isOpen={isModalOpen}
         onClose={() => setIsModalOpen(false)}
       />
+          <Footer/>
+
     </Box>
+    
   );
 };
 

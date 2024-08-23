@@ -14,7 +14,7 @@ const Navbar = ({ isLoggedIn, username, handleLogout }) => {
   const isSignupPath = location.pathname === '/signup';
 
   return (
-    <Flex as="nav" bg="#29335c" p={4} color="white">
+    <Flex as="nav" bg="#559dbd" p={4} color="white" >
       <ChakraLink as={Link} to="/" mx={2}>
         Home
       </ChakraLink>

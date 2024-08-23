@@ -8,6 +8,7 @@ import Hotel from './Component/Hotels';
 import AllRoutes from './Routes/AllRoutes'
 import RazorpayPayment from './Component/Payment/RazorpayPayment';
 import Page from './Component/LoginSignup/Page';
+import Footer from './Component/Footer/Footer';
 // import Navbar from './Component/NavFoot/Navbar';
 // import FooterTop from './Component/NavFoot/FooterTop';
 // import Footer from './Component/NavFoot/Footer';
@@ -15,8 +16,7 @@ import Page from './Component/LoginSignup/Page';
 function App() {
   return (
     <div className="App">
-      <AllRoutes/>
-    
+      <AllRoutes />
    {/* <h1>Hi i am ready</h1> */}
       {/* <Payment/>
       <PlaceCard/> */}
