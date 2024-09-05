@@ -56,8 +56,8 @@ const Hotel = () => {
     }, 3000);
   };
 
-  useEffect(() => {
-    axios
+  useEffect( () => {
+     axios
       .get("https://wanderlust-be-8lk0.onrender.com/hotels")
       .then((response) => {
         setHotels(response.data);
