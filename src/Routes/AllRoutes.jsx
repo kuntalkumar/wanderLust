@@ -15,22 +15,22 @@ const Navbar = ({ isLoggedIn, username, handleLogout }) => {
 
   return (
     <Flex as="nav" bg="#559dbd" p={4} color="white" >
-      <ChakraLink as={Link} to="/" mx={2}>
+      <ChakraLink as={Link} to="/" mx={2} mt={2}>
         Home
       </ChakraLink>
-      <ChakraLink as={Link} to="/holidays" mx={2}>
+      <ChakraLink as={Link} to="/holidays" mx={2} mt={2}>
         Holidays
       </ChakraLink>
-      <ChakraLink as={Link} to="/hotels" mx={2}>
+      <ChakraLink as={Link} to="/hotels" mx={2} mt={2}>
         Hotels
       </ChakraLink>
 
       {!isLoggedIn && !isLoginPath && !isSignupPath && (
         <>
-          <ChakraLink as={Link} to="/login" mx={2}>
+          <ChakraLink as={Link} to="/login" mt={2} mx={2}>
             Login
           </ChakraLink>
-          <ChakraLink as={Link} to="/signup" mx={2}>
+          <ChakraLink as={Link} to="/signup" mt={2} mx={2}>
             Signup
           </ChakraLink>
         </>
@@ -80,7 +80,7 @@ const App = () => {
             <Route path="/" element={<PlaceCard />} />
             <Route path="/holidays" element={<PlaceCard />} />
             <Route path="/hotels" element={<Hotel />} />
-            <Route path="/hotels/:id" element={<Details />} />
+            <Route path="/hotels/:id" element={isLoggedIn?<Details />:<Login/>} />
             <Route path="/payment" element={<RazorpayPayment />} />
             <Route path="/login" element={<Login handleLogin={handleLogin} />} />
             <Route path="/signup" element={<Signup />} />

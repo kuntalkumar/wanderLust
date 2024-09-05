@@ -23,14 +23,13 @@ import {
   ModalContent,
   ModalHeader,
   ModalBody,
-  Spinner,Spacer , Link ,  MenuMenuButton,
-  MenuList,
-  MenuItem,
+  Spinner
+  
 } from "@chakra-ui/react";
 import { debounce } from "lodash";
 import { FaSearch } from "react-icons/fa";
-import Footer from "./Footer/Footer";
 import { useNavigate } from "react-router-dom";
+import Footer from "./Footer/Footer";
 
 const ModalWithSpinner = ({ isOpen, onClose }) => {
   const [showSpinner, setShowSpinner] = useState(true);
@@ -47,17 +46,15 @@ const ModalWithSpinner = ({ isOpen, onClose }) => {
     <Modal isOpen={isOpen} onClose={onClose}>
       <ModalOverlay />
       <ModalContent>
-        {/* <ModalHeader>Loading...</ModalHeader> */}
         <ModalBody
           display='flex'
           justifyContent='center'
           alignItems='center'
           bg={"#3199da"}
         >
-          {/* {showSpinner && <Spinner size='xl' />} */}
           <img
             src='https://i.pinimg.com/originals/eb/70/7a/eb707ae7096cc8df384f1bf87dab547a.gif'
-            alt=''
+            alt='Loading'
           />
         </ModalBody>
       </ModalContent>
@@ -70,17 +67,21 @@ const PlaceCard = () => {
   const [searchTerm, setSearchTerm] = useState("");
   const [data, setData] = useState([]);
   const [isModalOpen, setIsModalOpen] = useState(false);
-  const navigate=useNavigate()
+  const [loading, setLoading] = useState(true); // Add loading state
+  const navigate = useNavigate();
 
   useEffect(() => {
-    axios
-      .get("https://wanderlust-be-8lk0.onrender.com/places")
-      .then((response) => {
+    const fetchPlaces = async () => {
+      try {
+        const response = await axios.get("https://wanderlust-be-8lk0.onrender.com/places");
         setPlaces(response.data);
-      })
-      .catch((error) => {
+      } catch (error) {
         console.error("Error fetching data:", error);
-      });
+      } finally {
+        setLoading(false); // Set loading to false after data is fetched
+      }
+    };
+    fetchPlaces();
   }, []);
 
   const handleSearch = debounce((value) => {
@@ -120,9 +121,7 @@ const PlaceCard = () => {
     setIsModalOpen(true); // Open the modal
 
     try {
-      const response = await axios.get(
-        "https://wanderlust-be-8lk0.onrender.com/data"
-      );
+      const response = await axios.get("https://wanderlust-be-8lk0.onrender.com/data");
       setData(response.data.length);
       console.log(data);
     } catch (error) {
@@ -141,18 +140,13 @@ const PlaceCard = () => {
     }
 
     setTimeout(() => {
-      setIsModalOpen(false); // Close the modal after 5 seconds
-      // window.location.href = "/hotels";
-      navigate("/hotels")
+      setIsModalOpen(false); // Close the modal after 2 seconds
+      navigate("/hotels");
     }, 2000);
   };
 
   return (
-
-
-    
     <Box bgColor={"#cceaf7"} marginTop={0}>
-  
       <Heading
         pt={100}
         fontWeight={600}
@@ -165,9 +159,9 @@ const PlaceCard = () => {
           Search your Destination
         </Text>
       </Heading>
-      
-      <Flex justifyContent="center" >
-      <InputGroup w={["80%", "80%", "50%"]} size="lg">
+
+      <Flex justifyContent="center">
+        <InputGroup w={["80%", "80%", "50%"]} size="lg">
           <InputLeftElement
             pointerEvents='none'
             children={<Icon as={FaSearch} color='gray.500' />}
@@ -180,62 +174,55 @@ const PlaceCard = () => {
           />
         </InputGroup>
       </Flex>
-      <Grid templateColumns={["repeat(1, 1fr)", "repeat(2, 1fr)", "repeat(4, 1fr)"]} gap={6} p={5}>
-        {filteredPlaces?.map((place) => (
-          <ChakraCard key={place.id} maxW='md' p={2} bg={"white"} 
-          // _hover={{
-            // transform: "scale(1.04)", 
-            // transition: "transform 0.3s ease-in-out", 
-          // }}
-          >
-            <CardBody>
-            {/* <Heading size='lg'>{place.desc}</Heading> */}
-              <Image src={place.image} alt={place.name} borderRadius='lg'  height={['150px', '150px', '200px']} />
-              <Stack mt='6' spacing='3'>
-                <Heading size='lg'>{place.name}</Heading>
-                <Text color='blue.600' fontSize='1xl'>
-                 {place.price}
-                </Text>
-              </Stack>
-            </CardBody>
-            <Divider />
-            <CardFooter>
-              <ButtonGroup spacing='40'>
-                <Button
-                  variant='solid'
-                  colorScheme='orange'
-                  _hover={{
-                    backgroundColor: "orange.600", // Change background color on hover
-                  }}
-                  onClick={() => {
-                    handleClick(place);
-                  }}
-                >
-                  Book Now
-                </Button>
 
-                {/* <Button
-                  variant='solid'
-                  colorScheme='orange'
-                >
-                  More Details
-                </Button> */}
-              </ButtonGroup>
-              <Text color='blue.600' fontSize='2xl' pl={10}>
-                {/* Days: {place.days} */}
-              </Text>
-            </CardFooter>
-          </ChakraCard>
-        ))}
-      </Grid>
+      {loading ? ( // Show loader while data is being fetched
+        <Flex justifyContent='center' alignItems='center' height='100vh'>
+          <Spinner size='xl' />
+        </Flex>
+      ) : (
+        <Grid templateColumns={["repeat(1, 1fr)", "repeat(2, 1fr)", "repeat(4, 1fr)"]} gap={6} p={5}>
+          {filteredPlaces?.map((place) => (
+            <ChakraCard key={place.id} maxW='md' p={2} bg={"white"}>
+              <CardBody>
+                <Image src={place.image} alt={place.name} borderRadius='lg' height={['150px', '150px', '200px']} />
+                <Stack mt='6' spacing='3'>
+                  <Heading size='lg'>{place.name}</Heading>
+                  <Text color='blue.600' fontSize='1xl'>
+                    {place.price}
+                  </Text>
+                </Stack>
+              </CardBody>
+              <Divider />
+              <CardFooter>
+                <ButtonGroup spacing='40'>
+                  <Button
+                    variant='solid'
+                    colorScheme='orange'
+                    _hover={{
+                      backgroundColor: "orange.600", // Change background color on hover
+                    }}
+                    onClick={() => {
+                      handleClick(place);
+                    }}
+                  >
+                    Book Now
+                  </Button>
+                </ButtonGroup>
+                <Text color='blue.600' fontSize='2xl' pl={10}>
+                  {/* Days: {place.days} */}
+                </Text>
+              </CardFooter>
+            </ChakraCard>
+          ))}
+        </Grid>
+      )}
+
       <ModalWithSpinner
         isOpen={isModalOpen}
         onClose={() => setIsModalOpen(false)}
       />
-          <Footer/>
-
+      <Footer />
     </Box>
-    
   );
 };
 

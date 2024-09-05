@@ -9,6 +9,7 @@ import {
   FormErrorMessage,
   Alert,
   AlertIcon,
+  Text,
 } from '@chakra-ui/react';
 import { useNavigate } from 'react-router-dom';
 
@@ -62,7 +63,7 @@ const Signup = () => {
   };
 
   return (
-    <Box maxW={{ base: 'sm', md: 'md', lg: 'lg' }}  mx="auto" mt={10} p={5} borderWidth={1} borderRadius="lg" boxShadow="lg">
+    <Box maxW={{ base: 'sm', md: 'md', lg: 'lg' }} mx="auto" mt={10} p={5} borderWidth={1} borderRadius="lg" boxShadow="lg">
       <Heading mb={6} textAlign="center">Signup</Heading>
       {authError && (
         <Alert status="error" mb={4}>
@@ -112,6 +113,9 @@ const Signup = () => {
         </FormControl>
         <Button type="submit" colorScheme="teal" width="full">Signup</Button>
       </form>
+      <Text mt={4} textAlign="center">
+        Already registered? <Button variant="link" colorScheme="teal" onClick={() => navigate('/login')}>Login here</Button>.
+      </Text>
     </Box>
   );
 };

@@ -56,8 +56,8 @@ const Hotel = () => {
     }, 3000);
   };
 
-  useEffect(() => {
-    axios
+  useEffect( () => {
+     axios
       .get("https://wanderlust-be-8lk0.onrender.com/hotels")
       .then((response) => {
         setHotels(response.data);
@@ -107,7 +107,7 @@ const Hotel = () => {
 
   return (
     <>
-      <Box mt={[-20, -20, -40]}>
+      <Box mt={[-20, -20, -40]} >
         <Box bgColor={""} h={[120, 120, 160]}></Box>
         <Grid templateColumns={['repeat(1, 1fr)', 'repeat(2, 1fr)', 'repeat(4, 1fr)']} gap={10} p={[3, 5]} bg={"#cceaf7"}>
           {hotels.map((hotel) => (

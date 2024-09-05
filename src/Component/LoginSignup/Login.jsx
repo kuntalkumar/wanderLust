@@ -1,7 +1,6 @@
-// Login.js
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { Box, Heading, Alert, AlertIcon, FormControl, FormLabel, Input, Button } from '@chakra-ui/react';
+import { Box, Heading, Alert, AlertIcon, FormControl, FormLabel, Input, Button, Text } from '@chakra-ui/react';
 
 const Login = ({ handleLogin }) => {
   const [email, setEmail] = useState('');
@@ -20,12 +19,11 @@ const Login = ({ handleLogin }) => {
       handleLogin(email); // Call the onLogin function passed as a prop
     } else {
       setError('Invalid credentials');
-
     }
   };
 
   return (
-    <Box maxW="md" mx="auto" mt={10} >
+    <Box maxW="md" mx="auto" mt={10}>
       <Heading as="h2" size="xl" textAlign="center">
         Login
       </Heading>
@@ -47,8 +45,10 @@ const Login = ({ handleLogin }) => {
         <Button mt={4} colorScheme="teal" type="submit" width="full">
           Login
         </Button>
-      <div></div>
       </form>
+      <Text mt={4} textAlign="center">
+        If you are not registered, <Button variant="link" colorScheme="teal" onClick={() => navigate('/signup')}>sign up here</Button>.
+      </Text>
     </Box>
   );
 };
