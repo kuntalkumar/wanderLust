@@ -86,7 +86,7 @@ const PlaceCard = () => {
 
   const handleSearch = debounce((value) => {
     setSearchTerm(value);
-  }, 100);
+  }, 300);
 
   const filteredPlaces = places.filter((place) =>
     place.name.toLowerCase().includes(searchTerm.toLowerCase())
@@ -209,7 +209,7 @@ const PlaceCard = () => {
                   </Button>
                 </ButtonGroup>
                 <Text color='blue.600' fontSize='2xl' pl={10}>
-                  {/* Days: {place.days} */}
+                {/* Days:  {place.days}  */}
                 </Text>
               </CardFooter>
             </ChakraCard>

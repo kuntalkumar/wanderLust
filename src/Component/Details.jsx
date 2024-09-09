@@ -102,11 +102,11 @@ function Details() {
         <Center>
           <div style={{ display: 'flex', flexDirection: ['column', 'row'], marginTop:"10px" }}>
 
-            <div style={{ marginRight: ['0px', '5px'], marginBottom: ['10px', '0px'] }}>
+            <div style={{ marginRight: ['0px', '5px'], marginBottom: ['10px', '0px'] }} >
               <Image
                 src={data.urls}
                 alt="N"
-                style={{ width:"800px", height: "520px", borderRadius: ['10px', '10px 10px 10px'] }}
+                style={{ marginRight:"10px",width:"800px", height: "520px", borderRadius: ['10px', '10px 10px 10px'] }}
               />
             </div>
 
