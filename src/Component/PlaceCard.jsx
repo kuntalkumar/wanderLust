@@ -86,7 +86,7 @@ const PlaceCard = () => {
 
   const handleSearch = debounce((value) => {
     setSearchTerm(value);
-  }, 300);
+  }, 100);
 
   const filteredPlaces = places.filter((place) =>
     place.name.toLowerCase().includes(searchTerm.toLowerCase())
