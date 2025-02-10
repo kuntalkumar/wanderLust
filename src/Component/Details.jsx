@@ -305,30 +305,30 @@ function Details() {
         </Box>
 
         
- <Box marginTop={['20px', '40px']}>
- <div style={style}>
-          <iframe
-            className="iframe"
-            style={{
-              height: "450px",
-              border: "0  px",
-              loading: "lazy",
-              left: "0px",
-              //   position:"absolute",
-              top: "0px",
-              width: "100%",
-            }}
-            id="iframe"
-            //   width="600"
-            //   height="450"
-            //   style="border: 0"
-            //   loading="lazy"
-            allowfullscreen
-            referrerpolicy="no-referrer-when-downgrade"
-            src={`https://www.google.com/maps/embed/v1/place?key=AIzaSyCJ50P3i-sk5hbxpI4mwppCAkio4ATadi0
-                    &q=${data.name}`}
-          ></iframe></div>
- </Box>
+    <Box marginTop={['20px', '40px']}>
+    <div style={style}>
+              <iframe
+                className="iframe"
+                style={{
+                  height: "450px",
+                  border: "0  px",
+                  loading: "lazy",
+                  left: "0px",
+                  //   position:"absolute",
+                  top: "0px",
+                  width: "100%",
+                }}
+                id="iframe"
+                //   width="600"
+                //   height="450"
+                //   style="border: 0"
+                //   loading="lazy"
+                allowfullscreen
+                referrerpolicy="no-referrer-when-downgrade"
+                src={`https://www.google.com/maps/embed/v1/place?key=AIzaSyCJ50P3i-sk5hbxpI4mwppCAkio4ATadi0
+                        &q=${data.name}`}
+              ></iframe></div>
+    </Box>
  
 
         <Box textAlign="right" marginBottom={5}>

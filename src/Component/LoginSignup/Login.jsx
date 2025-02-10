@@ -16,7 +16,7 @@ const Login = ({ handleLogin }) => {
     if (email === storedEmail && password === storedPassword) {
       navigate('/');
 
-      handleLogin(email); // Call the onLogin function passed as a prop
+      handleLogin(email); 
     } else {
       setError('Invalid credentials');
     }
